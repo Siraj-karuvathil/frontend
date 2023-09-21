@@ -1,0 +1,65 @@
+.profile-container {
+display: flex;
+flex-direction: column;
+position: relative;
+width: 100%;
+margin: 0 auto;
+}
+
+
+.pro-tab {
+padding: 10px 10px 10px 10px;
+text-align: start;
+width: 50%;
+cursor: pointer;
+
+box-sizing: content-box;
+position: relative;
+outline: none;
+}
+@media (200px <= width <= 900px){
+    .pro-tab  {
+        padding: 10px 0;
+        width: 100%;
+    }
+  }
+
+
+
+
+.pro-tab:not(:last-child){
+border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-pro-tab  {
+
+color: #CBA135;
+
+}
+
+
+
+button {
+border: none;
+font-size: 20px;
+font-weight: 500;
+color: rgba(240, 248, 255, 0.747);
+}
+
+@media (650px <= width <= 900px){
+  button {
+    font-size: 17px;
+  }
+}
+
+.pro-content {
+
+padding: 20px 20px 20px 0px;
+width: 100%;
+height: 100%;
+display: none;
+}
+
+.active-pro-content {
+display: block;
+}

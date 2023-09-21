@@ -1,0 +1,68 @@
+:root {
+    --thm-font: "Roboto", sans-serif;
+    --thm-font2: Arial;
+    --thm-clr1: #ffbb00;
+    --thm-clr2: #cba135;
+    --thm-clr3: #ffbd07;
+    --thm-clr4: #000000b0;
+    --text-clr: rgba(255, 255, 255, 0.863);
+  }
+  
+  body {
+    font-family: var(--thm-font);
+    background: #080808;
+    color: #f7f7f7;
+  }
+  
+  .abt-banner {
+    background: transparent
+      url("https://res.cloudinary.com/dvbplh4z9/image/upload/v1670564955/Cooking%20Academy%20Assets/AboutPage/Mask_Group_17_2x_jhuzcr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 543px;
+    width: 100%;
+    opacity: 0.36;
+  }
+  
+  .abt-head {
+    background-image: url("https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Layer_2_vmobmf.svg");
+  }
+  
+ 
+  .ownerBackground {
+    background: transparent
+      linear-gradient(
+        180deg,
+        #000000 0%,
+        #dda300 42%,
+        #caa034 55%,
+        #cba13500 100%
+      )
+      0% 0% no-repeat padding-box;
+    opacity: 0.7;
+  }
+  
+  .ownerVideo {
+    top: 2223px;
+    left: 119px;
+    width: 1682px;
+    height: 947px;
+  }
+  
+  .abtVision {
+    background: #080808 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
+  .hrThemeBg {
+    border-width: 0;
+    color: #cba135;
+    background-color: #cba135;
+  }
+  
+  .ourValues {
+    background-image: linear-gradient(251deg, #000000, #FFBB00);
+    opacity: 1;
+  }
+  

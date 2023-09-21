@@ -1,0 +1,176 @@
+/* normal progress */
+.progress {
+  padding:0;
+  width:90%;
+  height:15px;
+  overflow:hidden;
+  background:#e5e5e5;
+  border-radius:10px;
+  border: 2px white solid;
+}
+
+.progress .bar {
+	position:relative;
+  min-width:1%;
+  height:100%;
+
+}
+
+
+
+/* circle progress */
+.progresess {
+  width: 60px;
+  height: 60px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: #07070c;
+  text-align: center;
+  margin: 20px
+}
+
+/* .progresess::after {content: "%";} */
+
+.progresess .title {position: relative;z-index: 100;}
+
+.progresess .overlay {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #07070c
+}
+
+.progresess .left, .progresess .right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #CBA135;
+  border-radius: 100px 0px 0px 100px;
+  border-right: 0;
+  transform-origin: right;
+}
+
+.progresess .left {animation: load1 1s linear forwards;}
+
+.progresess:nth-of-type(2) .right, .progresess:nth-of-type(3) .right {animation: load2 .5s linear forwards 1s;}
+
+.progresess:last-of-type .right, .progresess:first-of-type .right {animation: load3 .8s linear forwards 1s;}
+
+@keyframes load1 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(180deg);}
+}
+
+@keyframes load2 {
+  0% {z-index: 100;transform: rotate(180deg);}
+
+  100% {z-index: 100;transform: rotate(270deg);}
+}
+
+@keyframes load3 {
+  0% {z-index: 100;transform: rotate(180deg);}
+
+  100% {
+      z-index: 100;transform: rotate(315deg);}
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .block-tabs {
+    display: flex;
+  }
+  .tabs {
+  
+    padding: 10px 10px 10px 0px;
+    text-align: start;
+    width: 15%;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+  }
+
+  @media (200px <= width <= 900px){
+    .tabs {
+        width: 50%;
+    }
+  }
+  .tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100%);
+    height: 3px;
+    background: rgba(255, 255, 255, 0.178);
+  }
+  
+  .tabs:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .active-tabs  {
+    /* background: rgb(46, 163, 157); */
+    border-bottom: 1px solid transparent;
+  }
+  
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100%);
+    height: 3px;
+    background: rgb(255, 255, 255);
+  }
+  
+  
+  
+  button {
+    border: none;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+
+    padding: 20px 20px 20px 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  }

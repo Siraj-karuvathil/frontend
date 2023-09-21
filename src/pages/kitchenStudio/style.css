@@ -1,0 +1,117 @@
+
+/* banner */
+.kitchen-banner{
+    background-image:linear-gradient(to bottom, rgba(2, 2, 2, 0.205), rgba(0, 0, 0, 0.897)), url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786722/Cooking%20Academy%20Assets/Component_19_1_wrk493.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+@media (width >= 1300px){
+  .kitchen-banner{
+    height: 100vh;
+  }
+}
+
+
+@media (650px <= width <= 900px){
+  .kitchen-banner{
+    height: 60vh;
+  }
+}
+
+.custom-indicator2{
+
+    bottom: -120px;
+    height: 100px;
+  
+  }
+  .custom-indicator2 li{
+    width: 110px !important;
+    height: 70px !important;
+    /* filter: grayscale(100%); */
+    
+  }
+  .custom-indicator2 li.slick-active {
+    /* filter: grayscale(0%); */
+    height: 80px !important;
+    border-radius: 10px;
+    
+  }
+  .custom-pagin2{
+    height: 70px !important;
+    width: 110px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-bottom: 3px;
+  }
+  
+  @media (200px <= width <= 600px){
+    .custom-pagin2{
+      display: none;
+    }
+    .custom-indicator2 li.slick-active {
+      display: none;
+    }
+  }
+
+  @media (650px <= width <= 900px){
+    .custom-indicator2 li{
+      width: 60px !important;
+      height: 40px !important;
+    }
+    .custom-indicator2 li.slick-active {
+      height: 45px !important;
+    }
+    .custom-pagin2{
+      width: 60px !important;
+      height: 40px !important;
+    }
+  }
+
+
+
+  .kitchen .arrow5{
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    z-index: 300;
+    cursor: pointer;
+  }
+  .kitchen .arrow5:hover{
+      color: var(--thm-clr2);
+  }
+  .kitchen .arrow-right5{
+    right:-80px;
+  }
+  .kitchen .arrow-left5{
+    left:-80px;
+  }
+
+  @media (200px <= width <= 600px){
+    .kitchen .arrow5{
+        top: -30%;
+    }
+    .kitchen .arrow-right5{
+        right:45px;
+      }
+      .kitchen .arrow-left5{
+        left:45px;
+      }
+  }
+
+.filts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+

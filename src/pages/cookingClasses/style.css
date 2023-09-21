@@ -1,0 +1,18 @@
+.cook-banner{
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.158), rgba(0, 0, 0, 0.822)),url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1671084212/Cooking%20Academy%20Assets/cooking%20class/man-cook-holds-pan-with-vegetables-flying-air_nra2c0.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+@media (200px <= width <= 600px){
+    .cook-banner{
+      height: 80vh;
+    }
+  }
+@media (650px <= width <= 900px){
+    .cook-banner{
+      height: 60vh;
+    }
+  }

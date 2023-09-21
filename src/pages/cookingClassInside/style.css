@@ -1,0 +1,124 @@
+.ban-video-content{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(2, 2, 2, 0.103), rgba(0, 0, 0, 0.795));
+}
+
+
+.quotes-bg{
+    background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1671529824/Cooking%20Academy%20Assets/cooking%20class/Group_353_hn6vec.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+@media (200px <= width <= 850px){
+    .quotes-bg{
+        height: 80vh;
+        background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.404), rgba(0, 0, 0, 0.836)), url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1671529824/Cooking%20Academy%20Assets/cooking%20class/Group_353_hn6vec.jpg');
+    }
+}
+
+/* slides */
+
+.cookingTestimonial .slick-slide > div {
+    margin: 35px 0px;
+  
+}
+
+
+.cookingTestimonial .testi-slide .auto-hide{
+opacity: 0;
+
+}
+.cookingTestimonial .testi-slide-active .auto-hide{
+opacity: 1;
+
+}
+.cookingTestimonial .testi-slide img{
+    transform: scale(.7);
+}
+.cookingTestimonial .testi-slide-active img{
+    transform: scale(1);
+}
+.cookingTestimonial .testi-slide{
+opacity: 0.5;
+margin-left: 0px;
+
+}
+
+.cookingTestimonial .testi-slide-active{
+opacity: 1;
+margin-left: 40px;
+}
+@media (200px <= width <= 600px){
+    .cookingTestimonial .testi-slide-active{
+        margin: 0;
+    }
+}
+
+.cookingTestimonial .arrow6{
+font-size: 25px;
+padding: 10px 20px;
+border-radius: 50%;
+color:white;
+position: absolute;
+top: 50%;
+z-index: 300;
+cursor: pointer;
+border: 1px solid rgba(255, 255, 255, 0.171);
+}
+@media (200px <= width <= 600px){
+    .cookingTestimonial .arrow6{
+        font-size: 25px;
+        padding: 5px 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0%;
+        z-index: 300;
+        cursor: pointer;
+        
+    }
+    .cookingTestimonial .arrow-right6{
+        right: 50px;
+    }
+    .cookingTestimonial .arrow-left6{
+        left: 50px;
+    }
+}
+.cookingTestimonial .arrow6:hover{
+    color: var(--thm-clr2);
+}
+@media (min-width: 800px){
+    .cookingTestimonial .arrow-right6{
+        transform: rotate(270deg);
+        top: 45%;
+        right: 10px;
+    }
+    .cookingTestimonial .arrow-left6{
+        transform: rotate(270deg);
+        top: 55%;
+        right: 10px;
+    }
+}
+
+@media (min-width: 850px){
+.cookingTestimonial .arrow-right6{
+    transform: rotate(270deg);
+    top: 45%;
+    right: 100px;
+}
+.cookingTestimonial .arrow-left6{
+    transform: rotate(270deg);
+    top: 55%;
+    right: 100px;
+}
+}
