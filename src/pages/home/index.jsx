@@ -255,7 +255,7 @@ function LandingPage() {
 
               </div>
                     <div className='grid place-items-center xs:pt-10 lg:pt-16 pb-10' data-aos="fade-right">
-                        <a href='#' className='bg-slate-500 hover:bg-[#FFBB00] transition-all duration-500 rounded-md px-5 py-2'>{t('exploreclasses')}</a>
+                        <a href='#' className='bg-slate-501 hover:bg-[#FFBB00] transition-all duration-500 rounded-md px-5 py-2'>{t('exploreclasses')}</a>
                     </div>
         </div>
       </section>
