@@ -26,7 +26,9 @@ jobs:
       run: npm install
 
     - name: Build
-      # env:
-      #   REACT_APP_BASE_URL: "https://api.cookingacademy.qa/api/1.0"
+      env:
+        REACT_APP_BASE_URL: https://api.cookingacademy.qa/api/1.0
+        CI: false
+        
       run: npm run build
     
