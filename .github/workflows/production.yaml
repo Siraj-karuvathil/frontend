@@ -27,6 +27,6 @@ jobs:
 
     - name: Build
       env:
-        REACT_APP_BASE_URL: https://api.cookingacademy.qa/api/1.0
+        REACT_APP_BASE_URL: "https://api.cookingacademy.qa/api/1.0"
       run: npm run build
     
