@@ -74,6 +74,35 @@ function LandingPage() {
     <CL/>
     {/* =================================Brands================================= */}
 
+    {/* =================================About us================================= */}
+    <section className='w-11/12 mx-auto pt-10'>
+              <div data-aos="fade-right">
+                  <h2 className='text-center font-bold xs:text-4xl lg:text-5xl'>{t('abthead')}</h2>
+                  <p className='xs:w-[90%] md:w-[80%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>{t('abtpara')}</p>
+              </div>
+      </section>
+    {/* =================================About us================================= */}
+
+
+    {/* =================================Meet Our Chefs================================= */}
+    <section>
+        <MOC/>
+      </section>
+     {/* =================================Meet Our Chefs================================= */}
+
+
+     {/* ==================================Other Service================================ */}
+    <section className=''>
+      <div className='md:pl-5 lg:pl-20  xs:px-5 md:px-0 py-10' data-aos="fade-right">
+        <h3 className='text-3xl font-semibold'>{t('service')}.</h3>
+      </div>
+
+          <ServiceSlider/>
+
+    </section>
+    {/* ==================================Other Service================================ */}
+
+
 
     {/* =================================Explore================================= */}
     <section className='' data-aos="fade-right">
@@ -87,25 +116,10 @@ function LandingPage() {
     </section>
     {/* =================================Explore================================= */}
 
-    {/* =================================About us================================= */}
-      <section className='w-11/12 mx-auto pt-10'>
-              <div data-aos="fade-right">
-                  <h2 className='text-center font-bold xs:text-4xl lg:text-5xl'>{t('abthead')}</h2>
-                  <p className='xs:w-[90%] md:w-[80%] mx-auto text-center text-[#ffffffcb] xs:text-lg md:text-xl py-5'>{t('abtpara')}</p>
-              </div>
-      </section>
-    {/* =================================About us================================= */}
 
-    {/* =================================Achievment================================= */}
-    <section className='w-11/12 mx-auto pb-10'>
-      <LSA/>
-    </section>
-    {/* =================================Achievment================================= */}
-
-
-     {/* =================================Workshop================================= */}
-     <section className='workshop overflow-hidden relative'>
-        <div className='xs:w-[90%] md:w-[85%] mx-auto xs:pt-10 lg:pt-10'>
+    {/* =================================Workshop================================= */}
+    <section className='workshop overflow-hidden relative'>
+            <div className='xs:w-[90%] md:w-[85%] mx-auto xs:pt-10 lg:pt-10'>
           <div className='' data-aos="fade-right">
             <h2 className='font-bold xs:text-4xl lg:text-5xl xs:text-center md:text-left' data-aos="fade-right">{t('workshop')}</h2>
           </div>
@@ -120,65 +134,15 @@ function LandingPage() {
         {/* ===========WorkshopImages============ */}
      </section>
      {/* =================================Workshop================================= */}
+
+
      
+    {/* ==================================Feedback================================ */}
+    
+    <FEED/>
+    {/* ==================================Feedback================================ */}
 
-
-
-
-     {/* =================================Meet Our Chefs================================= */}
-      <section>
-        <MOC/>
-      </section>
-     {/* =================================Meet Our Chefs================================= */}
-
-     {/* =================================Team building================================= */}
-  
-
-    <section className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] flex flex-col justify-end'>
-        <div className='grid grid-cols-1 md:grid-cols-2  place-items-end -mt-1'>
-            <div className='bg-[#141414] xs:px-3 xs:py-5 md:py-0 h-full md:p-10 lg:p-14 w-full flex flex-col justify-center ' >
-              <h1 className='font-bold xs:text-3xl md:text-2xl lg:text-6xl' data-aos="fade-right">{t('cophead1')}<br/> {t('cophead2')}</h1>
-              <h3 className='font-normal xs:text-xl md:text-xl lg:text-3xl' data-aos="fade-right">{t('cophead3')}</h3>
-            </div>
-            <div className='w-full h-full overflow-hidden'>
-              <img className=' w-full h-full object-cover  hover:scale-105 duration-500' src={team2} alt="team" />
-            </div>
-        </div>
-        <div className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] overflow-hidden'>
-          <div className='w-11/12 mx-auto xs:py-5 md:py-8'>
-              <p className='text-lg font-normal'>{t('coppara1')}</p>
-              <p className=' pt-8 text-base lg:text-base font-light tracking-wide'>{t('coppara2')}</p>
-              <div className='flex flex-wrap gap-3 justify-center md:justify-start pt-3'>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb1} alt="team brand" data-aos="fade-right"/>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb2} alt="team brand" data-aos="fade-right"/>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb3} alt="team brand" data-aos="fade-right"/>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb4} alt="team brand" data-aos="fade-right"/>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb5} alt="team brand" data-aos="fade-right"/>
-              </div>
-          </div>
-        </div>
-      </section>
-      {/* =================================Team building================================= */}
-
-    {/* ==================================Other Service================================ */}
-    <section className=''>
-      <div className='md:pl-5 lg:pl-20  xs:px-5 md:px-0 py-10' data-aos="fade-right">
-        <h3 className='text-3xl font-semibold'>{t('service')}.</h3>
-      </div>
-
-          <ServiceSlider/>
-
-    </section>
-    {/* ==================================Other Service================================ */}
-
-
-    {/* ==================================Enquire Submit form================================ */}
-    <ENQ/>
-    {/* ==================================Enquire Submit form================================ */}
-
-
-
-    {/* ==================================delicious recipe================================ */}
+      {/* ==================================delicious recipe================================ */}
       <section className='w-11/12 mx-auto recipe p-2'>
         <div className='bg-[#000000a2] rounded-3xl'>
               <div className='flex xs:flex-col md:flex-row justify-between py-10 px-5' data-aos="fade-right">
@@ -262,11 +226,7 @@ function LandingPage() {
     {/* ==================================delicious recipe================================ */}
 
 
-    {/* ==================================Feedback================================ */}
-    
-    <FEED/>
-    {/* ==================================Feedback================================ */}
-
+     
     {/* ==================================Instagram================================ */}
     <section className='xs:py-10  insta-bg'>
          <div className='xs:w-11/12 md:w-full mx-auto text-center text-[#ffffffcb]' data-aos="fade-right">
@@ -283,6 +243,60 @@ function LandingPage() {
           </div>
     </section>
     {/* ==================================Instagram================================ */}
+
+
+
+
+
+
+    
+     {/* =================================Team building================================= */}
+  
+
+    <section className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] flex flex-col justify-end'>
+        <div className='grid grid-cols-1 md:grid-cols-2  place-items-end -mt-1'>
+            <div className='bg-[#141414] xs:px-3 xs:py-5 md:py-0 h-full md:p-10 lg:p-14 w-full flex flex-col justify-center ' >
+              <h1 className='font-bold xs:text-3xl md:text-2xl lg:text-6xl' data-aos="fade-right">{t('cophead1')}<br/> {t('cophead2')}</h1>
+              <h3 className='font-normal xs:text-xl md:text-xl lg:text-3xl' data-aos="fade-right">{t('cophead3')}</h3>
+            </div>
+            <div className='w-full h-full overflow-hidden'>
+              <img className=' w-full h-full object-cover  hover:scale-105 duration-500' src={team2} alt="team" />
+            </div>
+        </div>
+        <div className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] overflow-hidden'>
+          <div className='w-11/12 mx-auto xs:py-5 md:py-8'>
+              <p className='text-lg font-normal'>{t('coppara1')}</p>
+              <p className=' pt-8 text-base lg:text-base font-light tracking-wide'>{t('coppara2')}</p>
+              <div className='flex flex-wrap gap-3 justify-center md:justify-start pt-3'>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb1} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb2} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb3} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb4} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb5} alt="team brand" data-aos="fade-right"/>
+              </div>
+          </div>
+        </div>
+      </section>
+      {/* =================================Team building================================= */}
+
+    
+        
+    {/* =================================Achievment================================= */}
+    <section className='w-11/12 mx-auto pb-10'>
+      <LSA/>
+    </section>
+    {/* =================================Achievment================================= */}
+
+
+     
+
+    {/* ==================================Enquire Submit form================================ */}
+    <ENQ/>
+    {/* ==================================Enquire Submit form================================ */}
+
+
+
+  
 
 
     {/* ==================================Frequently questions================================ */}

@@ -56,7 +56,7 @@ function Cart() {
               <hr className="py-2" />
               <div className="flex justify-between">
                 <p>Price({itemsInCart} item)</p>
-                <p>${cart?.price}</p>
+                <p>QAR{cart?.price}</p>
               </div>
               {/* <div className="flex justify-between">
 								<p>Tax 18%</p>
@@ -65,7 +65,7 @@ function Cart() {
               <hr className="py-2" />
               <div className="flex justify-between font-semibold">
                 <h3>Total Amount</h3>
-                <h3>${cart?.price}</h3>
+                <h3>QAR{cart?.price}</h3>
               </div>
             </div>
 

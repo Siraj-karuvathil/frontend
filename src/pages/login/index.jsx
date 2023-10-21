@@ -117,7 +117,7 @@ function Login() {
 								</div>
 							</div>
 							<p className="text-text-dark xs:text-xs md:text-[10px] xl:text-xs text-center md:w-[80%] mx-auto py-2">
-								By creating an account you agrre to our Terms of Service and
+								By creating an account you agree to our Terms of Service and
 								Privacy Policy
 							</p>
 							<button

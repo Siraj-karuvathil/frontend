@@ -84,14 +84,14 @@ function AboutUs() {
                 <h1 className='lg:ml-16 text-base xs:text-center md:text-left'>{t('founder')}</h1>
           </div>
           <div className='flex flex-col xs:gap-5 md:gap-0 justify-between z-20 '>
-              <div className='xs:mt-28  lg:mt-36 '>
+              {/* <div className='xs:mt-28  lg:mt-36 '>
                 <h1 className='font-bold xs:text-4xl  xs:text-center md:text-left lg:text-5xl  '>{t('ourvisionh')}</h1>
                 <p className='text-lg pt-2 xs:text-center md:text-left'>{t('ourvisionp')}</p>
               </div>
               <div className=' lg:mb-20'>
                 <h1 className='font-bold xs:text-4xl  xs:text-center md:text-left lg:text-5xl'>{t('ourmissionh')}</h1>
                 <p className='text-lg pt-2 xs:text-center md:text-left'>{t('ourmissionp')}</p>
-              </div>
+              </div> */}
           </div>
        </div>
       </section>
