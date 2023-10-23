@@ -43,7 +43,7 @@ function FAQ() {
                         )
                     }
         </div>
-        <div className='accordion__faq pt-10'>
+        {/* <div className='accordion__faq pt-10'>
             <h2 className='text-xl pb-3'>Pricing & Payment</h2>
             {Price.map((item, index) =>
                         <div key={index} onClick={() => toggleAccordion2(index)} data-aos="fade-right">
@@ -59,7 +59,7 @@ function FAQ() {
                         </div>
                         )
                     }
-        </div>
+        </div> */}
       </section>
   )
 }

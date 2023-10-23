@@ -106,7 +106,7 @@ function CookingclassInside() {
                                         14-day free cancellation
                                     </p>
                                     <h1 className="text-5xl py-3 text-primary-clr2 font-bold">
-                                        ${course?.price}
+                                        QAR{course?.price}
                                     </h1>
                                     <p className="text-xs pb-2">Terms and Conditions apply</p>
                                 </>

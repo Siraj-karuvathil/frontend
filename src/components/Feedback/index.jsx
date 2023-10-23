@@ -17,7 +17,7 @@ function Feedback() {
 	// ========================//
   return (
     <>
-    <section className='feedback xs:my-10 md:pb-10 lg:pb-0 lg:my-28 xs:h-fit md:h-fit lg:h-[600px] overflow-hidden'>
+    <section className='feedback xs:mb-10 md:pb-10 lg:pb-0 lg:mb-28 xs:h-fit md:h-fit lg:h-[600px] overflow-hidden'>
       <div className='w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-5'>
           <div className='md:col-span-2 flex justify-center flex-col xs:py-10 lg:py-0 lg:h-[600px]' data-aos="fade-right">
                 <h1 className='xs:text-3xl md:text-4xl font-medium pb-5'>{t('feedback')}</h1>

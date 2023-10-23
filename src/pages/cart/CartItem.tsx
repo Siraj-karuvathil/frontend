@@ -74,7 +74,7 @@ const CartItem: FC<CartItemProps> = ({ item }) => {
 					<p className="cursor-pointer">Save for Later</p>
 				</div>
 				<div className="flex flex-col justify-center align-middle">
-					<h2 className="font-bold text-3xl">${item.price}</h2>
+					<h2 className="font-bold text-3xl">QAR{item.price}</h2>
 				</div>
 			</div>
 		</div>

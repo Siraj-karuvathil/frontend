@@ -96,14 +96,15 @@ function Navbar() {
 								</NavLink>
 							</li>
 							<li>
+								<NavLink to="/about-us">About Us</NavLink>
+							</li>
+							<li>
 								<NavLink to="/cooking-class">Cooking Class</NavLink>
 							</li>
 							<li>
 								<NavLink to="/kitchen-studio">Kitchen Studio</NavLink>
 							</li>
-							<li>
-								<NavLink to="/about-us">About Us</NavLink>
-							</li>
+							
 							<li>
 								<NavLink to='/cart'><i class="text-xl fa-solid fa-cart-shopping"></i></NavLink>
 							</li>
