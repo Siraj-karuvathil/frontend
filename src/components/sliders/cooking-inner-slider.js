@@ -80,9 +80,9 @@ return (
         Testimonial.map((item,index) => (
             <div className={index === slideIndex ? '!grid md:grid-cols-3  testi-slide testi-slide-active ': 'testi-slide !grid md:grid-cols-3 gap-0'}  key={index}>
                 <div className='grid place-items-center'>
-                    <img className='' src={item.image} />
+                    <img className='h-20 rounded-full' src={item.image} />
                     <h4 className='text-center auto-hide'>{item.name}</h4>
-                    <p className='text-center auto-hide'>{item.Desng}</p>
+                    <p className='text-center auto-hide text-transparent'>{item.Desng}</p>
                 </div>
                 <div className='md:col-span-2 md:w-[70%] grid place-items-center text-xl relative'>
                     <i class="absolute xs:text-sm md:text-2xl xs:left-0 md:-left-10 xs:-top-5 md:top-0 fa-solid fa-quote-left auto-hide"></i>
