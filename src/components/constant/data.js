@@ -322,41 +322,65 @@ export const KitchenFilter=[
 
 export const Testimonial=[
     {
-        name:'Anne Joe 1',
+        name:'Fatima Sharif',
         Desng:'Entertainer ,USA',
-        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
-        desc:`1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`The online cooking lessons from The Cooking Academy were an excellent experience. I learned many delicious recipes and significantly improved my cooking skills. Thank you!`
     },
     {
-        name:'Anne Joe 2',
+        name:'Abdul Rahman Al Khalidi',
         Desng:'Entertainer ,USA',
-        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
-        desc:`2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`I am very grateful to The Cooking Academy for the fantastic lessons. I learned how to prepare delicious and enjoyable dishes. I highly recommend it.`
     },
     {
-        name:'Anne Joe 3',
+        name:'Layla Hassan',
         Desng:'Entertainer ,USA',
-        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
-        desc:`3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`A wonderful experience! The online cooking lessons from The Cooking Academy helped me diversify my daily meals. Thank you for the inspiration.`
     },
     {
-        name:'Anne Joe 4',
+        name:'Mohammed Qassim',
         Desng:'Entertainer ,USA',
-        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
-        desc:`4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`I enjoyed every moment in the online cooking lessons. The chef and the content were excellent. I am very thankful.`
     },
     {
-        name:'Anne Joe 5',
+        name:'Hala Mansour',
         Desng:'Entertainer ,USA',
-        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
-        desc:`5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`I loved the online cooking lessons from The Cooking Academy. I enjoyed learning new techniques and cooking with a fantastic group.`
     },
     {
-        name:'Anne Joe 6',
+        name:'Abdullah Abdullah',
         Desng:'Entertainer ,USA',
-        image:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621457/Cooking%20Academy%20Assets/Downloader.la_-62d179ce09ad1_2x_jvrg8j.png',
-        desc:`6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.`
-    }
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`The Cooking Academy is the best choice for those looking for online cooking lessons. I appreciate the quality of the lessons and support.`
+    },
+    {
+        name:'Noura Al Jenebi',
+        Desng:'Entertainer ,USA',
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`A fun and informative experience. The Cooking Academy has contributed to diversifying my menu with delicious dishes.`
+    },
+    {
+        name:'Abdullah Al Shahrani',
+        Desng:'Entertainer ,USA',
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`I am grateful to The Cooking Academy for the opportunity to develop my cooking skills. I learned a lot and enjoyed it immensely.`
+    },
+    {
+        name:'Fatima Al Saeed',
+        Desng:'Entertainer ,USA',
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`I am happy with the knowledge I gained from the online cooking lessons with The Cooking Academy. I was able to prepare wonderful meals.`
+    },
+    {
+        name:'Mohammed Sharif',
+        Desng:'Entertainer ,USA',
+        image:'https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg',
+        desc:`Excellent! The online cooking lessons from The Cooking Academy are an opportunity not to be missed. I recommend it to anyone who loves cooking.`
+    },
 
 ]
 
