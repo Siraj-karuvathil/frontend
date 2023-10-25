@@ -1,4 +1,5 @@
 import {useTranslation} from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 
 let Banner = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674205341/Cooking%20Academy%20Assets/consult_sfal4y.jpg';
 let img2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674206112/Cooking%20Academy%20Assets/how_vq2f8c.jpg';
@@ -108,8 +109,8 @@ function MenuConsultancy() {
         <h1 className="xs:text-2xl md:text-3xl font-light tracking-wider">{t('bookacon')}</h1>
         <h3 className="xs:text-base md:text-2xl xs:w-[95%] lg:w-[40%] text-center font-light">{t('bookaconpara')}</h3>
         <div className="flex gap-4">
-          <a href="tel:+97433242999" className="border-2 cursor-pointer xs:text-sm md:text-xl bg-transparent hover:bg-primary-clr2 transition-all duration-300 border-primary-clr2 p-1 text-center xs:w-40 md:w-60">{t('bookaconbtn1')}</a>
-          <a className="border-2 cursor-pointer xs:text-sm md:text-xl bg-transparent hover:bg-primary-clr2 transition-all duration-300 border-primary-clr2 p-1 text-center xs:w-40 md:w-60">{t('bookaconbtn2')}</a>
+          <a target='_blank' href="tel:+97433242999" className="border-2 cursor-pointer xs:text-sm md:text-xl bg-transparent hover:bg-primary-clr2 transition-all duration-300 border-primary-clr2 p-1 text-center xs:w-40 md:w-60">{t('bookaconbtn1')}</a>
+          <NavLink to={'/kitchen-studio'} className="border-2 cursor-pointer xs:text-sm md:text-xl bg-transparent hover:bg-primary-clr2 transition-all duration-300 border-primary-clr2 p-1 text-center xs:w-40 md:w-60">{t('bookaconbtn2')}</NavLink>
         </div>
       </div>
     </section>
