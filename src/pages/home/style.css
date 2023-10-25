@@ -18,10 +18,11 @@ body{
 }
 
 .banner{
-  background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1669633119/Cooking%20Academy%20Assets/bannn_jfj2kq.webp');
+  background-image: url('../../../public/bbb2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 .banner div{
    display: flex ;
