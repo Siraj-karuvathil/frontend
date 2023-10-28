@@ -81,14 +81,14 @@ function Cart() {
                   Apply
                 </button>
               </div>
-              <p className="text-sm pt-3">
+              {/* <p className="text-sm pt-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 ullam perspiciatis minus voluptatibus aspernatur dolores at
                 fugiat cupiditate voluptates autem consectetur et inventore
                 nesciunt neque nobis mollitia facilis a asperiores, iste nulla
                 possimus perferendis alias esse cumque! Voluptates reiciendis,
                 ipsa nihil porro ex tenetur cum amet.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
