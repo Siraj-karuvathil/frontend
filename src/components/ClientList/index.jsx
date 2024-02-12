@@ -3,15 +3,15 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // Assets Links
-let Brand1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669636282/Cooking%20Academy%20Assets/PngItem_2430409_c1mjn7.png';
-let Brand2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621451/Cooking%20Academy%20Assets/Layer_2_1_i3ipvl.svg';
-let Brand3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621452/Cooking%20Academy%20Assets/Layer_2_2_ge5flv.svg';
-let Brand4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670308695/Cooking%20Academy%20Assets/2014_7_8-alto-shaam-logo-trans-650x248_bsxirp.png';
-let Brand5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670327326/Cooking%20Academy%20Assets/Qatar-Airways-Logo_df2uug.png';
-let Brand6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309776/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.18_1_okxyeg.png';
-let Brand7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674301952/Cooking%20Academy%20Assets/logo_rojkrq.png';
-let Brand8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670309778/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-06_at_10.05.19c_1_tu42s7.png';
-let Brand9 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1680758517/Cooking%20Academy%20Assets/unox_hf2ovj.png';
+let Brand1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776331/Cooking%20Academy%20Assets/pxlpnibdpj8ubep8xu0l.png';
+let Brand2 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/lzqxvcd3n0ww4dipapcp.svg';
+let Brand3 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/l604o6jcu23jkfcumisc.svg';
+let Brand4 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776393/Cooking%20Academy%20Assets/syzx4hitvi3cexwdrycx.png';
+let Brand5 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776398/Cooking%20Academy%20Assets/s1oqcpzgfdnwz2tgc0v3.png';
+let Brand6 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776419/Cooking%20Academy%20Assets/b8aagc66inq4putlwt1u.png';
+let Brand7 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776439/Cooking%20Academy%20Assets/cdlzhqswxuwltmbtpgar.png';
+let Brand8 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776539/Cooking%20Academy%20Assets/g6dsuf8r8fyve3t9pagu.png';
+let Brand9 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776626/Cooking%20Academy%20Assets/b8i2ioidfawhmvhmo12r.png';
 
 export default function index() {
     return (

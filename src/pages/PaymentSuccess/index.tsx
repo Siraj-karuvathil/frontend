@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 let done =
-	"https://res.cloudinary.com/dvbplh4z9/image/upload/v1673343358/Cooking%20Academy%20Assets/successss_e9wkd3.webp";
+	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725128/Cooking%20Academy%20Assets/zk9u40gxgp8uycqm6l29.webp";
 
 const PaymentSuccess = () => {
 	return (

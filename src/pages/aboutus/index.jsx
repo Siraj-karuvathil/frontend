@@ -11,14 +11,14 @@ import FAQ from "../../components/Faq"
 import './style.css';
 
 /* -----Assets---Cloudinary */
-let mainLogo = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Layer_2_vmobmf.svg';
-let abtKitchen = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671267738/Cooking%20Academy%20Assets/AboutPage/Group_350_cdauaa.jpg';
+let mainLogo = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/rero4j0wglocfe3v1gpd.svg';
+let abtKitchen = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707719743/Cooking%20Academy%20Assets/cbyciwneotdtao9gii46.jpg';
 let ownerVideo = 'https://res.cloudinary.com/dvbplh4z9/video/upload/v1670499537/Cooking%20Academy%20Assets/kitchen%20videos/Mohammed_Abdulmalik_Co-Founder_of_Qatar_s_Cooking_Academy_iu0aco.mp4';
-let ownerImg = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670564955/Cooking%20Academy%20Assets/AboutPage/Mask_Group_32_p0ih7k.webp';
-let valueTrust = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670564954/Cooking%20Academy%20Assets/AboutPage/Group_262_y7oask.svg';
-let valueInnovation = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670564954/Cooking%20Academy%20Assets/AboutPage/Group_263_ylgssu.svg';
-let valueDevelopment = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670564954/Cooking%20Academy%20Assets/AboutPage/Group_261_h4muqr.svg';
-let valueQuality = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670564954/Cooking%20Academy%20Assets/AboutPage/Group_264_ch9ltr.svg';
+let ownerImg = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707720053/Cooking%20Academy%20Assets/gslqlvbxwjj8dru4tomd.webp';
+let valueTrust = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707720414/Cooking%20Academy%20Assets/mlgcmjqiruhruoe7hbfj.svg';
+let valueInnovation = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707720415/Cooking%20Academy%20Assets/kthyt20rnoa8riqpxfg1.svg';
+let valueDevelopment = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707720414/Cooking%20Academy%20Assets/ffusyj6q2onk2m1pkloy.svg';
+let valueQuality = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707720415/Cooking%20Academy%20Assets/o8katjenswi8mczpfb5a.svg';
 
 function AboutUs() {
     // ========================//

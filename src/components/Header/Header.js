@@ -13,11 +13,12 @@ import "../Header/Header.css";
 
 
 let Logo =
-	"https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Layer_2_vmobmf.svg";
+	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/rero4j0wglocfe3v1gpd.svg";
 let Logo2 = 'https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg';
 let Menu =
-	"https://res.cloudinary.com/dvbplh4z9/image/upload/v1669970200/Cooking%20Academy%20Assets/menu-100_fphqfd.png";
-function Navbar() {
+	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707718625/Cooking%20Academy%20Assets/i81dnadbn0vrakrdwje8.png";
+
+	function Navbar() {
 
 	  // ============Translator============//
 	  const {t} = useTranslation();

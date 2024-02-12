@@ -4,7 +4,7 @@ import Navbar from '../Navbar/AdminNav';
 import instance from "../../API/api_instance";
 
 
-let Image = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670322162/Cooking%20Academy%20Assets/foods/Indian_food_yyqojn.jpg';
+let Image = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707722366/Cooking%20Academy%20Assets/kentyj9fquw2dv5m9iht.jpg';
 
 function ClassDetails() {
 
