@@ -21,22 +21,23 @@ import EXPCLASS from "../../components/ExploreClasses";
 // Assets Links
 
 let Videotemp = 'https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4';
-let Item1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039134/Cooking%20Academy%20Assets/POT_CHICKEN_TACOS_yxidyt.jpg';
-let Item2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039134/Cooking%20Academy%20Assets/BAKED_CHICKEN_NUGGETS_tgz1sr.jpg';
-let Item3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039134/Cooking%20Academy%20Assets/THE_BEST_EVER_CHEESEBERGUR_x38vf2.jpg';
-let Item4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/SLOW_COOKER_BEEF_BARBACOA_fu6cfb.jpg';
-let Item5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/SHEET_PAN_CHICKEN_AND_STUFFING_dnwjxp.jpg';
-let Item6 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/LOADED_SMASHED_POTATOES_uipncw.jpg';
-let Item7 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674050617/Cooking%20Academy%20Assets/MINI_CHICKEN_QUESADILLAS_wparli.jpg';
-let Item8 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674039133/Cooking%20Academy%20Assets/HOT_SPINACH_AND_ARTICHOKE_DIP_t95lsn.jpg';
-let google = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674319499/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-21_at_17.27.37_xuoe5t.jpg';
-let team1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674563346/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-2asd1_at_15.58.17_stsduv.webp';
-let team2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674561431/Cooking%20Academy%20Assets/WhatsApp_Image_2023-01-21_at_15.58.17_beylyc.webp';
-let Tb1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566308/Cooking%20Academy%20Assets/Screenshot_2023-01-24_18sad4408_elcmhg.png';
-let Tb2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566308/Cooking%20Academy%20Assets/Screenshot_2023-01-24sdfsdf_184408_zgngtv.png';
-let Tb3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566308/Cooking%20Academy%20Assets/Screenshot_2023-01-24_18asd4408_nhkrud.png';
-let Tb4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566307/Cooking%20Academy%20Assets/Screenshot_2023-01-24_asd184408_nb7j5s.png';
-let Tb5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674566307/Cooking%20Academy%20Assets/Screenshot_2023-01-24_dsfdsf_wlaicw.png';
+let Item1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861227/Cooking%20Academy%20Assets/bit2rzotpezfkmrv7hky.jpg';
+let Item2 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861225/Cooking%20Academy%20Assets/yjamqnup6fcvn5e1pda2.jpg';
+let Item3 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861268/Cooking%20Academy%20Assets/sbllnzdgtik8jfog4cox.jpg';
+let Item4 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861267/Cooking%20Academy%20Assets/vdsrpvgqx8irwojuovk1.jpg';
+let Item5 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861267/Cooking%20Academy%20Assets/qiogj6a83npvjzlralas.jpg';
+let Item6 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861225/Cooking%20Academy%20Assets/to74tei7f59jimwbevih.jpg';
+let Item7 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861226/Cooking%20Academy%20Assets/gwqilqqmpqrz98pmdrkx.jpg';
+let Item8 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861225/Cooking%20Academy%20Assets/c8je9zqlmt73mqq8qs7y.jpg';
+let google = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861544/Cooking%20Academy%20Assets/v61o69dkiu2uc3pcp7qh.jpg';
+let team1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861605/Cooking%20Academy%20Assets/xqbotknjephuwmmx2ans.webp';
+let team2 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861650/Cooking%20Academy%20Assets/kvdxfeh7rzajmo5db6dn.webp';
+let Tb1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861709/Cooking%20Academy%20Assets/wqsfcb7jqinobesxxjwb.png';
+let Tb2 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861791/Cooking%20Academy%20Assets/pj73kyyedou8xjeieizb.png';
+let Tb3 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861826/Cooking%20Academy%20Assets/hfxvpie1euovupx3szfy.png';
+let Tb4 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861826/Cooking%20Academy%20Assets/zetqzvgyyxqm9gr5jx1d.png';
+let Tb5 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704861826/Cooking%20Academy%20Assets/ilzzxrx606gdkmwfuurc.png';
+
 
 
 function LandingPage() {

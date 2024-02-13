@@ -2,10 +2,9 @@ import {Link,useLocation,useParams} from 'react-router-dom';
 import React,{useEffect} from 'react'
 import Aos from 'aos';
 import "aos/dist/aos.css";
-let Logo ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Layer_2_vmobmf.svg';
+let Logo ='https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/rero4j0wglocfe3v1gpd.svg';
 let ISO = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670215005/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_09.49.53_gm3fno.png';
-let ISO1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670316067/Cooking%20Academy%20Assets/kitchen%20assets/iso_loi4al.png';
-
+let ISO1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707719528/Cooking%20Academy%20Assets/vsmdzwtj3lpam1rwrljn.png';
 
 
 function Footer() {

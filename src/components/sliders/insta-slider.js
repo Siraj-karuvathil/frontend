@@ -7,7 +7,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {InstaData} from '../constant/data'
 
 
-let instabox = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786014/Cooking%20Academy%20Assets/Instagram_mockup_4_htobcw.png';
+let instabox = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704859968/Cooking%20Academy%20Assets/pygkuya5tkmdmicq9zuj.png';
 
 
 

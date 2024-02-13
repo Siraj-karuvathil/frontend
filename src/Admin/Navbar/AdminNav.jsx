@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate,NavLink } from "react-router-dom"; 
-let Logo ='https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621453/Cooking%20Academy%20Assets/Layer_2_vmobmf.svg'
+let Logo ='https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/rero4j0wglocfe3v1gpd.svg'
 
 function AdminNav() {
     const navigate = useNavigate('');

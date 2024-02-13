@@ -3,11 +3,11 @@ import {useTranslation} from 'react-i18next'
 import '../../pages/home/style.css';
 
 
-let  User1 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1669621459/Cooking%20Academy%20Assets/avatar-ff16c9f4f6a033d94f3ef4d895e78d42_2x_h99rtd.png';
-let  User2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.12.44_PM_qtrtei.jpg';
-let  User3 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.10.49_PM_z4nnhl.jpg';
-let  User4 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.43.18_PM_iokoby.jpg';
-let  User5 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.47.55_PM_bn7zat.jpg';
+let  User1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863763/Cooking%20Academy%20Assets/ubj0kcfwfgynaakqkxjx.png';
+let  User2 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863796/Cooking%20Academy%20Assets/y0ngexafwkqtftbzsvjx.jpg';
+let  User3 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863796/Cooking%20Academy%20Assets/hsctwd1ch4gzudpxubsz.jpg';
+let  User4 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863797/Cooking%20Academy%20Assets/g7gjnfbsnkv1jgi2vn1h.jpg';
+let  User5 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863797/Cooking%20Academy%20Assets/nzhuaoitlbxo4i2iou9m.jpg';
 
 function Feedback() {
       	// ========================//
@@ -35,7 +35,7 @@ function Feedback() {
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.10.49_PM_z4nnhl.jpg)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863796/Cooking%20Academy%20Assets/hsctwd1ch4gzudpxubsz.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
                         <img alt='img' className='h-14 rounded-2xl' src={User3} />
                         <span className='text-white pl-3'>
@@ -54,7 +54,7 @@ function Feedback() {
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670233805/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.12.44_PM_qtrtei.jpg)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863796/Cooking%20Academy%20Assets/y0ngexafwkqtftbzsvjx.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
                         <img alt='img' className='h-14' src={User2} />
                         <span className='text-white pl-3'>
@@ -72,7 +72,7 @@ function Feedback() {
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.43.18_PM_iokoby.jpg)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863797/Cooking%20Academy%20Assets/g7gjnfbsnkv1jgi2vn1h.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
                         <img alt='img' className='h-14 rounded-2xl' src={User4} />
                         <span className='text-white pl-3'>
@@ -92,7 +92,7 @@ function Feedback() {
                     </span>
                   </div>
                 </div>
-                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dvbplh4z9/image/upload/v1670235612/Cooking%20Academy%20Assets/WhatsApp_Image_2022-12-05_at_3.47.55_PM_bn7zat.jpg)]'>
+                <div className='relative rounded-[2rem] xs:h-80 md:h-full bg-no-repeat bg-cover bg-[url(https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863797/Cooking%20Academy%20Assets/nzhuaoitlbxo4i2iou9m.jpg)]'>
                     <div className='absolute bottom-2 left-2 flex pt-3'>
                         <img alt='img' className='h-14 rounded-2xl' src={User5} />
                         <span className='text-white pl-3'>

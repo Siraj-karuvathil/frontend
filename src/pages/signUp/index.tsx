@@ -9,15 +9,15 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 let p1 =
-    "https://res.cloudinary.com/dvbplh4z9/image/upload/v1671099281/Cooking%20Academy%20Assets/Login-Signup/vadim-markin-Dn82UF7qsso-unsplash_u9zgzm.jpg";
+    "https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725207/Cooking%20Academy%20Assets/ycjxpntdul0pukl8kwz9.jpg";
 let p2 =
-    "https://res.cloudinary.com/dvbplh4z9/image/upload/v1671099281/Cooking%20Academy%20Assets/Login-Signup/nordwood-themes-wtevVfGYwnM-unsplash_wtwkjh.jpg";
+    "https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725207/Cooking%20Academy%20Assets/nzxgyd4kqdccev6zcu4o.jpg";
 let p3 =
-    "https://res.cloudinary.com/dvbplh4z9/image/upload/v1671099281/Cooking%20Academy%20Assets/Login-Signup/pexels-mister-mister-3434523_bj7xu1.jpg";
+    "https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725208/Cooking%20Academy%20Assets/y6xp00ca0qd5usel8dim.jpg";
 let p4 =
-    "https://res.cloudinary.com/dvbplh4z9/image/upload/v1671099282/Cooking%20Academy%20Assets/Login-Signup/pexels-rajesh-tp-1633525_xmjtun.jpg";
+    "https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725209/Cooking%20Academy%20Assets/uenoqnkkwdzyuz2ronea.jpg";
 let logo =
-    "https://res.cloudinary.com/dvbplh4z9/image/upload/v1671101445/Cooking%20Academy%20Assets/Login-Signup/Layer_2_tzsagt.svg";
+    "https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725202/Cooking%20Academy%20Assets/tu2g3ztzck6q6kljxp69.svg";
 
 const validationSchema = Yup.object().shape({
     username: Yup.string().required().label("Username"),

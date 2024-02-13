@@ -140,40 +140,40 @@ export const ExploreData=[
 
 export const InstaData=[
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070063/Cooking%20Academy%20Assets/instagram/310545183_571292858087093_1436220637735436307_n_newzcd.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860064/Cooking%20Academy%20Assets/lxwvxehleyt7kdriger9.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070062/Cooking%20Academy%20Assets/instagram/310355900_3035347186764510_3139094102509483218_n_t0spbl.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860145/Cooking%20Academy%20Assets/xyzegagbbtkduwp8xv1d.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070062/Cooking%20Academy%20Assets/instagram/314910049_482704096991751_389789204527587378_n_yb9h92.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860252/Cooking%20Academy%20Assets/c4yykrfinzdxsgy0hmzx.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070062/Cooking%20Academy%20Assets/instagram/310969180_424887216443579_2426822459625693689_n_hza83j.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860252/Cooking%20Academy%20Assets/lpw2fxycumeyy7ry4xmm.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070062/Cooking%20Academy%20Assets/instagram/310616496_1770789133280519_8887549948405714857_n_j17ibz.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860252/Cooking%20Academy%20Assets/l0lmf1ssmbihv425nyop.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070061/Cooking%20Academy%20Assets/instagram/311270078_673442047528627_9076925017910813099_n_qpmb2a.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860441/Cooking%20Academy%20Assets/nezoxv40swyvmmozmv4q.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070060/Cooking%20Academy%20Assets/instagram/311314962_1070836800297582_7766507354203218701_n_rndl6j.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860501/Cooking%20Academy%20Assets/wf2ufwttfgi2jses1xt2.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070057/Cooking%20Academy%20Assets/instagram/314708054_191272890129951_374817096918141395_n_antivc.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860501/Cooking%20Academy%20Assets/aae0wklel2jw5jsjlgze.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070057/Cooking%20Academy%20Assets/instagram/317014555_688445009513045_2974737688399523828_n_zccufe.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860502/Cooking%20Academy%20Assets/vesytxml17qmeuhs4a3v.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070057/Cooking%20Academy%20Assets/instagram/314402978_1776183366115038_6352323470663454871_n_rhzhyw.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860500/Cooking%20Academy%20Assets/mbznnoydzulsnzdqcvkq.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070057/Cooking%20Academy%20Assets/instagram/311857640_830785724779902_3404056655420753034_n_xwatnc.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860501/Cooking%20Academy%20Assets/x83qa8bqr7yjiqxekxo3.jpg`
     },
     {
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670070056/Cooking%20Academy%20Assets/instagram/314528017_463046005931358_8023194443924704693_n_wst0ef.jpg`
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860501/Cooking%20Academy%20Assets/wzw59w5u5bsargngiga5.jpg`
     },
     
 ]
@@ -235,12 +235,12 @@ export const WorkshopImg=[
 export const ServiceImg=[
     {
         heading:`Kitchen Studio`,
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1670062023/Cooking%20Academy%20Assets/kitchen%20assets/IMG-20221203-WA0093_gpvuln.jpg`,
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704859317/Cooking%20Academy%20Assets/pohcqtxxxibyr8b9byes.jpg`,
         url: `/kitchen-studio`
     },
     {
         heading:`Menu Consultancy`,
-        image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1669786013/Cooking%20Academy%20Assets/Component_20_1_qkz1nr.jpg`,
+        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704859317/Cooking%20Academy%20Assets/pohcqtxxxibyr8b9byes.jpg`,
         url: `/menu-consultancy`
     },
 ]
@@ -248,28 +248,28 @@ export const ServiceImg=[
 
 export const KitchenImg=[
    {
-    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323316/Cooking%20Academy%20Assets/kitchen%20page/IMG_5247_yr2fyv.webp`
+    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721427/Cooking%20Academy%20Assets/ekfcoe0xcykhbx3omaem.webp`
    },
    {
-    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323317/Cooking%20Academy%20Assets/kitchen%20page/IMG_5248_nskmnd.webp`
+    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721543/Cooking%20Academy%20Assets/mnq5l8cdn0ouhngl7zpj.jpg`
    },
    {
-    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323312/Cooking%20Academy%20Assets/kitchen%20page/IMG_5238_k9igte.webp`
+    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/nopiqsftueimi2ziw8x8.webp`
    },
    {
-    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323311/Cooking%20Academy%20Assets/kitchen%20page/IMG_5246_t5cnht.webp`
+    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/fsmw3q9pc0saua3gaq9c.webp`
    },
    {
-    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323287/Cooking%20Academy%20Assets/kitchen%20page/IMG_5240_xlwetk.webp`
+    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/uvkmfmg3bchrdzrbg85v.webp`
    },
    {
-    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323281/Cooking%20Academy%20Assets/kitchen%20page/IMG_5242_k4sngk.webp`
+    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/dlhfugosgl8jflnietve.jpg`
    },
    {
-    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323259/Cooking%20Academy%20Assets/kitchen%20page/maxresdefault_sfnhck.jpg`
+    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/tsk5hd8t8atyajwpheqw.webp`
    },
    {
-    image:`https://res.cloudinary.com/dvbplh4z9/image/upload/v1674323258/Cooking%20Academy%20Assets/kitchen%20page/Best_KitchenAid_Mixer_For_You_Desktop_IMG_9_xhnqfd.jpg`
+    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/ivmwhu1ai3u3jbeavxfk.webp`
    },
   
 ]
@@ -280,42 +280,42 @@ export const KitchenFilter=[
         bgcolor:`#b2ff00`,
         title:`SHOOTING SPACE`,
         para:`The kitchen is ideal for any commercial, editorial, family, or personal photoshoot & videography.`,
-        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2_2x_vt0tfc.webp'
+        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721982/Cooking%20Academy%20Assets/h6gf9m9zuszn1viw6dq2.webp'
     },
     {
         id:'2',
         bgcolor:`#b2ff00`,
         title:`LIGHTING`,
         para:`The Cooking Academy Kitchen has all your photo and video needs.  With a commercial-grade kitchen, client workspace, and natural light studio, we have everything you need!  All windows are equipped with ‘scrim-type’ shades that are easy to pull up and pull down for light control.`,
-        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011767/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_1_2x_tvipfa.webp'
+        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721996/Cooking%20Academy%20Assets/xc1ln7lzup9qrcjj49il.webp'
     },
     {
         id:'3',
         bgcolor:`#b2ff00`,
         title:`GENERAL`,
         para:`The kitchen is equipped with a 6 burner commercial range, gas and electric ovens, ice maker, sink,  fridges, and freezers in the kitchen, as well as ample open space for props and foods that need to be brought in. Anything you’re shooting can be wirelessly transmitted to the television in the client area so everyone can see what you’re shooting live.  The couch is equipped with both USB ports and outlets for charging laptops and phones.`,
-        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011766/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_2x_ixucle.webp'
+        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721996/Cooking%20Academy%20Assets/l74nmg36phwxxcvserxg.webp'
     },
     {
         id:'4',
         bgcolor:`#b2ff00`,
         title:`OTHERS`,
         para:`A top-of-the-line WiFi system makes wireless access easy for client uploads, video, and phone calls.  The studio is equipped with an amazing background.`,
-        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp'
+        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721997/Cooking%20Academy%20Assets/lfzspxcfimxxyhjbssvv.webp'
     },
     {
         id:'5',
         bgcolor:`#b2ff00`,
         title:`STUDIO ACCESS`,
         para:`The studio is located on the 1st floor and is accessible via a staircase.`,
-        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp'
+        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721997/Cooking%20Academy%20Assets/tkmgkgl6hegpiatlcrld.webp'
     },
     {
         id:'6',
         bgcolor:`#b2ff00`,
         title:`LOADING / UNLOADING`,
         para:`Vehicles are permitted to come into the premises of the building to load/unload equipment.`,
-        img:'https://res.cloudinary.com/dvbplh4z9/image/upload/v1671011765/Cooking%20Academy%20Assets/kitchen%20page/Alinea_Collective_Food_Photography_Kitchen_Studio_3_2x_hip4hc.webp'
+        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721997/Cooking%20Academy%20Assets/bpkenezo0scdwi39krjy.webp'
     },
 ]
 
