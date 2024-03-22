@@ -102,9 +102,9 @@ function Exploreslider() {
 											src={item.image}
 										/>
 										<div className="centered">
-											<p className="text-xl font-bold text-center uppercase">
+											{/* <p className="text-xl font-bold text-center uppercase">
 												{item.name}
-											</p>
+											</p> */}
 
 											<div className="flex flex-col  gap-5 w-64 md:w-52 lg:w-64 mx-auto pb-3 mt-8">
 												<a
