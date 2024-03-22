@@ -7,7 +7,7 @@ import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-
+import {Logp1,Logp2,Logp3,Logp4,CookLogo} from '../../Assets'
 let p1 =
     "https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725207/Cooking%20Academy%20Assets/ycjxpntdul0pukl8kwz9.jpg";
 let p2 =
@@ -142,12 +142,12 @@ function SignUp() {
                 <div className="lg:h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6">
                     <img
                         className="xs:hidden lg:block w-full h-full"
-                        src={p1}
+                        src={Logp4}
                         alt="img"
                     />
                     <img
                         className="xs:hidden lg:block w-full h-full"
-                        src={p2}
+                        src={Logp3}
                         alt="img"
                     />
                     <div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col justify-center  md:justify-start md:mt-5 2xl:mt-14 h-full">
@@ -155,7 +155,7 @@ function SignUp() {
                         <NavLink to='/'>
                             <img
                                 className="xs:h-fit md:h-14 xl:h-20 "
-                                src={logo}
+                                src={CookLogo}
                                 alt="logo"
                             />
                             </NavLink>
@@ -202,12 +202,12 @@ function SignUp() {
                     </div>
                     <img
                         className="xs:hidden lg:block w-full h-full"
-                        src={p3}
+                        src={Logp2}
                         alt="img"
                     />
                     <img
                         className="xs:hidden lg:block w-full h-full"
-                        src={p4}
+                        src={Logp1}
                         alt="img"
                     />
                 </div>

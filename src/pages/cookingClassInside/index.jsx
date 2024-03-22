@@ -12,6 +12,7 @@ import useAppSelector from "../../redux/hooks/useAppSelector";
 import { useCallback } from "react";
 import useAddCourseToCart from "../../hooks/useAddCourseToCart";
 import { NavLink } from "react-router-dom";
+import {ckv4,Recipe1,Recipe2,Recipe3,Recipe4,Recipe5,Recipe6,Recipe7,Recipe8,} from '../../Assets'
 
 let bgVideo =
     "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4";
@@ -66,7 +67,7 @@ function CookingclassInside() {
             <section className="relative">
                 <div className="w-[100%] h-[100vh]">
                     <video
-                        src={bgVideo}
+                        src={ckv4}
                         autoPlay
                         loop
                         muted
@@ -158,7 +159,7 @@ function CookingclassInside() {
             {/* ================About class=================== */}
 
             {/* ================Quotes=================== */}
-            <section className="quotes-bg mt-20">
+            {/* <section className="quotes-bg mt-20">
                 <div className="lg:w-[40%] float-right flex justify-center flex-col h-full lg:pr-32">
                     <h3 className="xs:w-[90%] lg:w-full mx-auto xs:text-3xl md:text-4xl xs:text-center md:text-left font-bold italic tracking-wider xs:leading-relaxed md:leading-relaxed">
                         {t('quotehead')}
@@ -167,7 +168,7 @@ function CookingclassInside() {
                         - {t('quotepara')}
                     </p>
                 </div>
-            </section>
+            </section> */}
             {/* ================Quotes=================== */}
 
             {/* ================Testimonial=================== */}
@@ -180,51 +181,44 @@ function CookingclassInside() {
                     {t('gallery')}
                 </h1>
 
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-4 xs:pt-8 md:pt-16">
+                <div className="grid grid-cols-1 md:grid-cols-4 xs:pt-8 md:pt-16">
                     <div className="md:col-span-2">
                         <img
-                            className="w-full h-full overflow-hidden hover:brightness-90"
-                            src={P1}
+                            className="w-full xs:h-full lg:h-52 object-cover overflow-hidden hover:brightness-90"
+                            src={Recipe1}
                             alt="image"
                         />
                     </div>
                     <div className="">
                         <img
-                            className="w-full h-full overflow-hidden hover:brightness-90"
-                            src={P2}
-                            alt="image"
-                        />
-                    </div>
-                    <div className="grid grid-flow-row gap-10">
-                        <img
-                            className="w-full overflow-hidden hover:brightness-90"
-                            src={P3}
-                            alt="image"
-                        />
-                        <img
-                            className="w-full overflow-hidden hover:brightness-90"
-                            src={P4}
+                            className="w-full xs:h-full lg:h-52 object-cover overflow-hidden hover:brightness-90"
+                            src={Recipe2}
                             alt="image"
                         />
                     </div>
                     <img
-                        className="w-full xs:h-full lg:h-52 overflow-hidden hover:brightness-90"
-                        src={P5}
+                        className="w-full xs:h-full lg:h-52 object-cover overflow-hidden hover:brightness-90"
+                        src={Recipe4}
                         alt="image"
                     />
                     <img
-                        className="w-full xs:h-full lg:h-52 overflow-hidden hover:brightness-90"
-                        src={P6}
+                        className="w-full xs:h-full lg:h-52  object-cover overflow-hidden hover:brightness-90"
+                        src={Recipe5}
                         alt="image"
                     />
                     <img
-                        className="w-full xs:h-full lg:h-52 overflow-hidden hover:brightness-90"
-                        src={P7}
+                        className="w-full xs:h-full lg:h-52 object-cover overflow-hidden hover:brightness-90"
+                        src={Recipe6}
                         alt="image"
                     />
                     <img
-                        className="w-full xs:h-full lg:h-52 overflow-hidden hover:brightness-90"
-                        src={P8}
+                        className="w-full xs:h-full lg:h-52 object-cover overflow-hidden hover:brightness-90"
+                        src={Recipe7}
+                        alt="image"
+                    />
+                    <img
+                        className="w-full xs:h-full lg:h-52 object-cover overflow-hidden hover:brightness-90"
+                        src={Recipe8}
                         alt="image"
                     />
                 </div>

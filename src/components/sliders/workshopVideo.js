@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {ckv1,ckv2,ckv3,ckv4,ckv5,ckv6} from '../../Assets'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -59,39 +60,29 @@ function WorkshopVideo() {
   const Vids = [
     {
       id: 0,
-      value:
-        "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670499537/Cooking%20Academy%20Assets/kitchen%20videos/Mohammed_Abdulmalik_Co-Founder_of_Qatar_s_Cooking_Academy_iu0aco.mp4",
+      value:ckv6,
     },
     {
       id: 1,
-      value:
-        "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062302/Cooking%20Academy%20Assets/kitchen%20videos/275510890_325976542837373_8757408711320570070_n_wsmvef.mp4",
+      value:ckv5,
     },
     {
       id: 2,
-      value:
-        "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062258/Cooking%20Academy%20Assets/kitchen%20videos/134089815_1602359789947238_1023671997030635485_n_nfgltl.mp4",
+      value:ckv4,
     },
     {
       id: 3,
-      value:
-        "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062212/Cooking%20Academy%20Assets/kitchen%20videos/86500766_2733767870036356_1147673113841980247_n_q8mq40.mp4",
+      value:ckv3,
     },
     {
       id: 4,
-      value:
-        "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062194/Cooking%20Academy%20Assets/kitchen%20videos/272718584_352467819775860_2029475229346567906_n_ekzcea.mp4",
+      value:ckv2,
     },
     {
       id: 5,
-      value:
-        "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062181/Cooking%20Academy%20Assets/kitchen%20videos/267586950_1167304190751867_7360938467903826068_n_dy8ie5.mp4",
+      value:ckv1,
     },
-    {
-      id: 6,
-      value:
-        "https://res.cloudinary.com/dvbplh4z9/video/upload/v1670062154/Cooking%20Academy%20Assets/kitchen%20videos/269855403_1031326227430276_7967652611108437312_n_y9tfz2.mp4",
-    },
+
   ];
   const [wordData, setWordData] = useState(Vids[0]);
   const handleClick = (index) => {
@@ -101,7 +92,7 @@ function WorkshopVideo() {
   return (
     <>
       <div className="w-[100%] py-10 flex flex-col justify-center items-center shop">
-        <video
+        <video 
           className="w-[100vw] rounded-3xl"
           src={wordData.value}
           controls

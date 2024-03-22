@@ -1,5 +1,6 @@
 import {useTranslation} from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import { Menuconsulp1,Menuconsulp2,Menuconsulbg} from '../../Assets'
 
 let Banner = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674205341/Cooking%20Academy%20Assets/consult_sfal4y.jpg';
 let img2 = 'https://res.cloudinary.com/dvbplh4z9/image/upload/v1674206112/Cooking%20Academy%20Assets/how_vq2f8c.jpg';
@@ -15,7 +16,7 @@ function MenuConsultancy() {
     <section className='w-11/12 mx-auto overflow-hidden'>
         {/* banner */}
         <div className='my-2 overflow-hidden'>
-            <img className='w-[100%] h-fit  object-cover hover:scale-105 transition-all duration-700 cursor-pointer' src={Banner} alt="banner" />
+            <img className='w-[100%] h-60  object-cover hover:scale-105 transition-all duration-700 cursor-pointer' src={Menuconsulbg} alt="banner" />
 
             <div className='md:w-[70%] mx-auto text-center'>
                 <h1 className='xs:text-2xl md:text-4xl tracking-wider xs:pt-10 md:pt-16 pb-2'>{t('menuhead1')}</h1>
@@ -27,7 +28,7 @@ function MenuConsultancy() {
         <div className='xs:py-10 md:py-20'>
             <div className='grid grid-cols-1 lg:grid-cols-2'>
                 <div className='overflow-hidden'>
-                  <img className='w-[100%] object-cover hover:scale-105 transition-all duration-700 cursor-pointer' src={img2} alt="how do image" />
+                  <img className='w-[100%] h-full object-cover hover:scale-105 transition-all duration-700 cursor-pointer' src={Menuconsulp1} alt="how do image" />
                 </div>
                 <div className='bg-primary-clr2 w-[100%] flex flex-col gap-4 justify-center items-center text-center xs:p-5 md:p-10'>
                     <h1 className='xs:text-2xl md:text-4xl font-light'>{t('menuhead2')}</h1>
@@ -58,7 +59,7 @@ function MenuConsultancy() {
                 <p className="leading-loose xs:text-base md:text-xl text-center lg:text-left font-normal">{t('menupara5')}</p>
             </div>
             <div className="overflow-hidden">
-              <img className="w-[100%] object-cover hover:scale-105 transition-all duration-700 cursor-pointer" src={img3} alt="concept image" />
+              <img className="w-[100%] h-full object-cover hover:scale-105 transition-all duration-700 cursor-pointer" src={Menuconsulp2} alt="concept image" />
             </div>
           </div>
       </div>

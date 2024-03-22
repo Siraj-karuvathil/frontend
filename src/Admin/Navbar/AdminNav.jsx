@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate,NavLink } from "react-router-dom"; 
-let Logo ='https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/rero4j0wglocfe3v1gpd.svg'
+import {CookLogo} from '../../Assets'
 
 function AdminNav() {
     const navigate = useNavigate('');
@@ -8,7 +8,7 @@ function AdminNav() {
     <>
      <nav className='bg-[#1a1919] admin-nav'>
         <div className='w-full grid place-items-center py-5'>
-            <img className='h-20' src={Logo} alt="" />
+            <img className='h-20 w-40 object-contain' src={CookLogo} alt="" />
         </div>
         <ul className='grid  grid-flow-row pl-8 py-10 gap-8 font-medium text-xl'>
             {/* <li className='cursor-pointer'><NavLink to="/admin/faq">FAQ</NavLink></li>

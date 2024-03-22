@@ -6,6 +6,7 @@ import LanguageOpt from '../../components/languageSelector'
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import { NavLink, useLocation } from "react-router-dom";
 import "../Header/Header.css";
+import {CookLogo,Profpic} from '../../Assets';
 
 
 
@@ -75,7 +76,7 @@ let Menu =
 				<div className="w-11/12 mx-auto lg:flex justify-between pt-8 pb-3">
 					<div className="flex justify-between">
 						<a href="/">
-							<img src={Logo} className="h-12 md:h-20"></img>
+							<img src={CookLogo} className="h-12 md:h-20"></img>
 						</a>
 						{/* menu */}
 						<i
@@ -111,7 +112,7 @@ let Menu =
 							</li>
 							<li className="">
 								<NavLink to={loggedIn ? "/profile" : '/login'}>
-									<img src={Logo2} className="h-14 rounded-full"></img>
+									<img src={Profpic} className="h-14 rounded-full"></img>
 								</NavLink>
 							</li>
 							<li>

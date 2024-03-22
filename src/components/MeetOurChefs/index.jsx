@@ -3,17 +3,7 @@ import { useState } from 'react';
 import {useTranslation} from 'react-i18next'
 import { NavLink, useLocation } from 'react-router-dom';
 import './styles.css';
-
-// Assets Links
-let Chef1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1669886573/Cooking%20Academy%20Assets/chef4.webp';
-let Chef2 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1669886572/Cooking%20Academy%20Assets/chef5.webp';
-let Chef3 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1669887904/Cooking%20Academy%20Assets/chef7.webp';
-let Chef4 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704695415/Cooking%20Academy%20Assets/chef10.webp';
-let Chef5 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704695415/Cooking%20Academy%20Assets/chef8.webp';
-let Chef6 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1669886574/Cooking%20Academy%20Assets/chef1.webp';
-let Chef7 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1669886573/Cooking%20Academy%20Assets/chef3.webp';
-let Chef8 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1669886573/Cooking%20Academy%20Assets/chef2.webp';
-let Chef9 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1669886572/Cooking%20Academy%20Assets/chef6.webp';
+import {Chef1,Chef2,Chef3,Chef4,Chef5,Chef6,Chef7,Chef8,Chef9} from '../../Assets'
 
 
 export default function Index() {

@@ -6,17 +6,7 @@ import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import { loginAction } from "../../redux/thunks/authThunk";
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import { NavLink } from "react-router-dom";
-
-let p1 =
-	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725207/Cooking%20Academy%20Assets/ycjxpntdul0pukl8kwz9.jpg";
-let p2 =
-	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725208/Cooking%20Academy%20Assets/y6xp00ca0qd5usel8dim.jpg";
-let p3 =
-	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725207/Cooking%20Academy%20Assets/nzxgyd4kqdccev6zcu4o.jpg";
-let p4 =
-	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725209/Cooking%20Academy%20Assets/uenoqnkkwdzyuz2ronea.jpg";
-let logo =
-	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707725202/Cooking%20Academy%20Assets/tu2g3ztzck6q6kljxp69.svg";
+import {Logp1,Logp2,Logp3,Logp4,CookLogo} from '../../Assets'
 
 const validationSchema = Yup.object({
 	username: Yup.string().required(),
@@ -70,18 +60,18 @@ function Login() {
 				<div className="lg:h-[80vh] w-full overflow-hidden grid grid-cols-1 lg:grid-cols-6 place-items-center">
 					<img
 						className="xs:hidden lg:block w-full h-full"
-						src={p1}
+						src={Logp1}
 						alt="img"
 					/>
 					<img
 						className="xs:hidden lg:block w-full h-full "
-						src={p2}
+						src={Logp2}
 						alt="img"
 					/>
 					<div className="col-span-2 xs:w-[80%] xl:w-[70%] mx-auto flex flex-col mt-10 xl:mt-20 2xl:mt-44  h-full">
 						<NavLink to='/'>
 							<div className="grid place-items-center">
-								<img className="xs:h-fit md:h-14 xl:h-20  " src={logo} alt="logo" />
+								<img className="xs:h-fit md:h-14 xl:h-20  " src={CookLogo} alt="logo" />
 							</div>
 						</NavLink>
 						<p className="text-primary-clr2 py-5">
@@ -139,12 +129,12 @@ function Login() {
 					</div>
 					<img
 						className="xs:hidden lg:block w-full h-full"
-						src={p3}
+						src={Logp3}
 						alt="img"
 					/>
 					<img
 						className="xs:hidden lg:block w-full h-full"
-						src={p4}
+						src={Logp4}
 						alt="img"
 					/>
 				</div>

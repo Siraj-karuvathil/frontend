@@ -12,10 +12,10 @@
 
 
 .quotes-bg{
-    background-image: url('https://res.cloudinary.com/dvbplh4z9/image/upload/v1671529824/Cooking%20Academy%20Assets/cooking%20class/Group_353_hn6vec.jpg');
+    background-image: url('../../Assets/cookiingclssbg.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 60vh;
 }
 @media (200px <= width <= 850px){
     .quotes-bg{
