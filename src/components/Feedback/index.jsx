@@ -1,13 +1,14 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next'
 import '../../pages/home/style.css';
+import {User1,User2,User3,User4,User5} from '../../Assets'
 
 
-let  User1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863763/Cooking%20Academy%20Assets/ubj0kcfwfgynaakqkxjx.png';
-let  User2 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863796/Cooking%20Academy%20Assets/y0ngexafwkqtftbzsvjx.jpg';
-let  User3 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863796/Cooking%20Academy%20Assets/hsctwd1ch4gzudpxubsz.jpg';
-let  User4 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863797/Cooking%20Academy%20Assets/g7gjnfbsnkv1jgi2vn1h.jpg';
-let  User5 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863797/Cooking%20Academy%20Assets/nzhuaoitlbxo4i2iou9m.jpg';
+// let  User1 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863763/Cooking%20Academy%20Assets/ubj0kcfwfgynaakqkxjx.png';
+// let  User2 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863796/Cooking%20Academy%20Assets/y0ngexafwkqtftbzsvjx.jpg';
+// let  User3 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863796/Cooking%20Academy%20Assets/hsctwd1ch4gzudpxubsz.jpg';
+// let  User4 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863797/Cooking%20Academy%20Assets/g7gjnfbsnkv1jgi2vn1h.jpg';
+// let  User5 = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704863797/Cooking%20Academy%20Assets/nzhuaoitlbxo4i2iou9m.jpg';
 
 function Feedback() {
       	// ========================//

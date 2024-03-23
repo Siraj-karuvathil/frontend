@@ -1,3 +1,4 @@
+import {Shootingp,Lightp,Generalp,OthersP,StudioacP,LoadingP,Kits1,Kits2,Kits3,Kits4,Kits5,Kits6,Kits7,Kits8,Srcbg,Instap1,Instap2,Instap10,Instap11,Instap12,Instap3,Instap4,Instap5,Instap6,Instap7,Instap8,Instap9} from '../../Assets'
 export const General=[
     {
         question:'I’ve never taken a Participation cooking class before. What can I expect?',
@@ -140,41 +141,42 @@ export const ExploreData=[
 
 export const InstaData=[
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860064/Cooking%20Academy%20Assets/lxwvxehleyt7kdriger9.jpg`
+        image:Instap1
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860145/Cooking%20Academy%20Assets/xyzegagbbtkduwp8xv1d.jpg`
+        image:Instap2
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860252/Cooking%20Academy%20Assets/c4yykrfinzdxsgy0hmzx.jpg`
+        image:Instap3
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860252/Cooking%20Academy%20Assets/lpw2fxycumeyy7ry4xmm.jpg`
+        image:Instap4
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860252/Cooking%20Academy%20Assets/l0lmf1ssmbihv425nyop.jpg`
+        image:Instap5
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860441/Cooking%20Academy%20Assets/nezoxv40swyvmmozmv4q.jpg`
+        image:Instap6
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860501/Cooking%20Academy%20Assets/wf2ufwttfgi2jses1xt2.jpg`
+        image:Instap7
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860501/Cooking%20Academy%20Assets/aae0wklel2jw5jsjlgze.jpg`
+        image:Instap8
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860502/Cooking%20Academy%20Assets/vesytxml17qmeuhs4a3v.jpg`
+        image:Instap9
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860500/Cooking%20Academy%20Assets/mbznnoydzulsnzdqcvkq.jpg`
+        image:Instap10
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860501/Cooking%20Academy%20Assets/x83qa8bqr7yjiqxekxo3.jpg`
+        image:Instap11
     },
     {
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704860501/Cooking%20Academy%20Assets/wzw59w5u5bsargngiga5.jpg`
+        image:Instap12
     },
+   
     
 ]
 
@@ -235,12 +237,12 @@ export const WorkshopImg=[
 export const ServiceImg=[
     {
         heading:`Kitchen Studio`,
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704859317/Cooking%20Academy%20Assets/pohcqtxxxibyr8b9byes.jpg`,
+        image:Srcbg,
         url: `/kitchen-studio`
     },
     {
         heading:`Menu Consultancy`,
-        image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704859317/Cooking%20Academy%20Assets/pohcqtxxxibyr8b9byes.jpg`,
+        image:Srcbg,
         url: `/menu-consultancy`
     },
 ]
@@ -248,29 +250,30 @@ export const ServiceImg=[
 
 export const KitchenImg=[
    {
-    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721427/Cooking%20Academy%20Assets/ekfcoe0xcykhbx3omaem.webp`
+    image:Kits1
    },
    {
-    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721543/Cooking%20Academy%20Assets/mnq5l8cdn0ouhngl7zpj.jpg`
+    image:Kits2
    },
    {
-    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/nopiqsftueimi2ziw8x8.webp`
+    image:Kits3
    },
    {
-    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/fsmw3q9pc0saua3gaq9c.webp`
+    image:Kits4
    },
    {
-    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/uvkmfmg3bchrdzrbg85v.webp`
+    image:Kits5
    },
    {
-    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/dlhfugosgl8jflnietve.jpg`
+    image:Kits6
    },
    {
-    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/tsk5hd8t8atyajwpheqw.webp`
+    image:Kits7
    },
    {
-    image:`https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721544/Cooking%20Academy%20Assets/ivmwhu1ai3u3jbeavxfk.webp`
+    image:Kits8
    },
+   
   
 ]
 
@@ -280,42 +283,42 @@ export const KitchenFilter=[
         bgcolor:`#b2ff00`,
         title:`SHOOTING SPACE`,
         para:`The kitchen is ideal for any commercial, editorial, family, or personal photoshoot & videography.`,
-        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721982/Cooking%20Academy%20Assets/h6gf9m9zuszn1viw6dq2.webp'
+        img:Shootingp
     },
     {
         id:'2',
         bgcolor:`#b2ff00`,
         title:`LIGHTING`,
         para:`The Cooking Academy Kitchen has all your photo and video needs.  With a commercial-grade kitchen, client workspace, and natural light studio, we have everything you need!  All windows are equipped with ‘scrim-type’ shades that are easy to pull up and pull down for light control.`,
-        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721996/Cooking%20Academy%20Assets/xc1ln7lzup9qrcjj49il.webp'
+        img:Lightp
     },
     {
         id:'3',
         bgcolor:`#b2ff00`,
         title:`GENERAL`,
         para:`The kitchen is equipped with a 6 burner commercial range, gas and electric ovens, ice maker, sink,  fridges, and freezers in the kitchen, as well as ample open space for props and foods that need to be brought in. Anything you’re shooting can be wirelessly transmitted to the television in the client area so everyone can see what you’re shooting live.  The couch is equipped with both USB ports and outlets for charging laptops and phones.`,
-        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721996/Cooking%20Academy%20Assets/l74nmg36phwxxcvserxg.webp'
+        img:Generalp
     },
     {
         id:'4',
         bgcolor:`#b2ff00`,
         title:`OTHERS`,
         para:`A top-of-the-line WiFi system makes wireless access easy for client uploads, video, and phone calls.  The studio is equipped with an amazing background.`,
-        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721997/Cooking%20Academy%20Assets/lfzspxcfimxxyhjbssvv.webp'
+        img:OthersP
     },
     {
         id:'5',
         bgcolor:`#b2ff00`,
         title:`STUDIO ACCESS`,
         para:`The studio is located on the 1st floor and is accessible via a staircase.`,
-        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721997/Cooking%20Academy%20Assets/tkmgkgl6hegpiatlcrld.webp'
+        img:StudioacP
     },
     {
         id:'6',
         bgcolor:`#b2ff00`,
         title:`LOADING / UNLOADING`,
         para:`Vehicles are permitted to come into the premises of the building to load/unload equipment.`,
-        img:'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707721997/Cooking%20Academy%20Assets/bpkenezo0scdwi39krjy.webp'
+        img:LoadingP
     },
 ]
 

@@ -41,7 +41,7 @@ function Exploreslider() {
 		infinite: true,
 		speed: 2000,
 		autoplay: true,
-		slidesToShow: 4,
+		slidesToShow: course.length > 4 ? 4 : course.length,
 		slidesToScroll: 1,
 		initialSlide: 0,
 		nextArrow: <SampleNextArrow />,
@@ -50,7 +50,7 @@ function Exploreslider() {
 			{
 				breakpoint: 1024,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 2,
 					slidesToScroll: 3,
 					infinite: true,
 				},
@@ -96,15 +96,15 @@ function Exploreslider() {
 								);
 								const addingItem = adding === item._id;
 								return (
-									<div className="relative ui-card" key={index}>
+									<div className="relative ui-card 2xl:px-20" key={index}>
 										<LazyLoadImage
 											className="rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full md:w-[411px]"
 											src={item.image}
 										/>
 										<div className="centered">
-											<p className="text-xl font-bold text-center uppercase">
+											{/* <p className="text-xl font-bold text-center uppercase">
 												{item.name}
-											</p>
+											</p> */}
 
 											<div className="flex flex-col  gap-5 w-64 md:w-52 lg:w-64 mx-auto pb-3 mt-8">
 												<a

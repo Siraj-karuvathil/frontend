@@ -6,7 +6,7 @@ import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import { loginAction } from "../../redux/thunks/authThunk";
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import instance from "../../API/api_instance";
-
+import {CookLogo} from '../../Assets'
 
 let Logo =
   "https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/rero4j0wglocfe3v1gpd.svg";
@@ -72,7 +72,7 @@ const Login = () => {
         onSubmit={loginForm.handleSubmit}
         className="bg-[#363636b2] flex flex-col gap-12 rounded-lg border-[1px] border-primary-clr2 py-10 px-5 xs:w-[90%] md:w-[50%] "
       >
-        <img className="h-16" src={Logo} alt="logo" />
+        <img className="h-16" src={CookLogo} alt="logo" />
 
         <input
           name="firstName"

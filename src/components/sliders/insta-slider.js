@@ -5,9 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {InstaData} from '../constant/data'
+import {Instacase} from '../../Assets'
 
-
-let instabox = 'https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704859968/Cooking%20Academy%20Assets/pygkuya5tkmdmicq9zuj.png';
 
 
 
@@ -57,7 +56,7 @@ function Instaslider() {
   return (
     <div className='insta relative xs:mt-32 md:mt-52 lg:mt-44'>
         <div className=' instta'>
-            <img className='xs:h-[300px] md:h-[600px] lg:h-[480px] ' src={instabox} />
+            <img className='xs:h-[300px] md:h-[600px] lg:h-[480px] ' src={Instacase} />
         </div>
         <Slider {...settings} className=' '>
             {

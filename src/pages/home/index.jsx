@@ -16,6 +16,7 @@ import FEED from "../../components/Feedback"
 import FAQ from "../../components/Faq"
 import EXPCLASS from "../../components/ExploreClasses";
 
+import {GoogRev,Recipe1,Recipe2,Recipe3,Recipe4,Recipe5,Recipe6,Recipe7,Recipe8,Coprative,Copt1,Copt2,Copt3,Copt4,Copt5} from '../../Assets'
 
 
 // Assets Links
@@ -154,7 +155,7 @@ function LandingPage() {
 
               <div className='dishes grid grid-cols-1 md:grid-cols-4 gap-5 gap-y-10 xs:p-5 md:p-10 '>
                     <div className='relative' data-aos="fade-right">
-                      <img alt='img' className=' rounded-3xl' src={Item1}/>
+                      <img alt='img' className=' rounded-3xl' src={Recipe1}/>
                         <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>{t('deliprod1')}</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>45 {t('minutes')}</p>
@@ -162,7 +163,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img alt='img' className=' rounded-3xl' src={Item2}/>
+                      <img alt='img' className=' rounded-3xl' src={Recipe2}/>
                         <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>{t('deliprod2')}</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>50 {t('minutes')}</p>
@@ -170,7 +171,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img alt='img' className=' rounded-3xl' src={Item3}/>
+                      <img alt='img' className=' rounded-3xl' src={Recipe3}/>
                         <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>{t('deliprod3')}</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>60 {t('minutes')}</p>
@@ -178,7 +179,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img alt='img' className=' rounded-3xl' src={Item4}/>
+                      <img alt='img' className=' rounded-3xl' src={Recipe4}/>
                         <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>{t('deliprod4')}</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>55 {t('minutes')}</p>
@@ -186,7 +187,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img alt='img' className=' rounded-3xl' src={Item5}/>
+                      <img alt='img' className=' rounded-3xl' src={Recipe5}/>
                         <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>{t('deliprod5')}</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>60 {t('minutes')}</p>
@@ -194,7 +195,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img alt='img' className=' rounded-3xl' src={Item6}/>
+                      <img alt='img' className=' rounded-3xl' src={Recipe6}/>
                         <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>{t('deliprod6')}</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>20 {t('minutes')}</p>
@@ -202,7 +203,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img alt='img' className=' rounded-3xl' src={Item7}/>
+                      <img alt='img' className=' rounded-3xl' src={Recipe7}/>
                         <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>{t('deliprod7')}</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>50 {t('minutes')}</p>
@@ -210,7 +211,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <div className='relative' data-aos="fade-right">
-                      <img alt='img' className=' rounded-3xl' src={Item8}/>
+                      <img alt='img' className=' rounded-3xl' src={Recipe8}/>
                         <p className='xs:text-base  md:text-sm lg:text-lg  font-semibold py-3 '>{t('deliprod8')}</p>
                       <span className='flex justify-between text-xs lg:text-base text-[#ffffffc7]'>
                         <p><i class="fa-regular fa-clock pr-2"></i>35 {t('minutes')}</p>
@@ -261,7 +262,7 @@ function LandingPage() {
               <h3 className='font-normal xs:text-xl md:text-xl lg:text-3xl' data-aos="fade-right">{t('cophead3')}</h3>
             </div>
             <div className='w-full h-full overflow-hidden'>
-              <img className=' w-full h-full object-cover  hover:scale-105 duration-500' src={team2} alt="team" />
+              <img className=' w-full h-full object-cover  hover:scale-105 duration-500' src={Coprative} alt="team" />
             </div>
         </div>
         <div className='bg-gradient-to-r from-[#141414f5] to-[#cc9601] overflow-hidden'>
@@ -269,11 +270,11 @@ function LandingPage() {
               <p className='text-lg font-normal'>{t('coppara1')}</p>
               <p className=' pt-8 text-base lg:text-base font-light tracking-wide'>{t('coppara2')}</p>
               <div className='flex flex-wrap gap-3 justify-center md:justify-start pt-3'>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb1} alt="team brand" data-aos="fade-right"/>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb2} alt="team brand" data-aos="fade-right"/>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb3} alt="team brand" data-aos="fade-right"/>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb4} alt="team brand" data-aos="fade-right"/>
-                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Tb5} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Copt1} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Copt2} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Copt3} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Copt4} alt="team brand" data-aos="fade-right"/>
+                  <img className='rounded-lg hover:scale-105 duration-500 object-cover xs:h-fit md:h-14 lg:h-fit' src={Copt5} alt="team brand" data-aos="fade-right"/>
               </div>
           </div>
         </div>
@@ -305,7 +306,7 @@ function LandingPage() {
     {/* ==================================Frequently questions================================ */}
     
     <section className='w-11/12 mx-auto pt-20 pb-10 grid place-items-center'>
-        <img className='h-16' src={google} alt="google" />
+        <img className='h-16' src={GoogRev} alt="google" />
     </section>
 
     </>
