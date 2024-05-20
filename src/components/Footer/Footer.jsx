@@ -23,6 +23,7 @@ function Footer() {
 // custom hide
 const { pathname } = useLocation();
 if (pathname === "/login") return null;
+if (pathname === "/forget-password") return null;
 if (pathname === "/signup") return null;
 if (pathname === "/success") return null;
 if (pathname === "/admin/login") return null;

@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import {withReduxProvider} from './redux/store'
 import Login from './pages/login/index';
+import ForgetPage from './pages/forgetPage/index';
 import SignUp from './pages/signUp/index';
 import Home from './pages/home/index';
 import Header from './components/Header/Header';
@@ -116,6 +117,10 @@ const router = createBrowserRouter([
       {
         path:"/admin/login",
         element:<AdminLogin/>
+      },
+      {
+        path:"/forget-password",
+        element:<ForgetPage/>
       },
       {
         path:"/admin/faq",
