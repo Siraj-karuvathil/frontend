@@ -9,6 +9,7 @@ import {
 import {withReduxProvider} from './redux/store'
 import Login from './pages/login/index';
 import ForgetPage from './pages/forgetPage/index';
+import OTP from './pages/otp/index';
 import SignUp from './pages/signUp/index';
 import Home from './pages/home/index';
 import Header from './components/Header/Header';
@@ -117,6 +118,10 @@ const router = createBrowserRouter([
       {
         path:"/admin/login",
         element:<AdminLogin/>
+      },
+      {
+        path:"/verify-otp",
+        element:<OTP/>
       },
       {
         path:"/forget-password",
