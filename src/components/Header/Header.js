@@ -41,7 +41,9 @@ let Menu =
 	if (pathname === "/login") return null;
 	if (pathname === "/signup") return null;
 	if (pathname === "/success") return null;
+	if (pathname === "/verify-otp") return null;
 	if (pathname === "/admin/login") return null;
+	if (pathname === "/forget-password") return null;
 	if (pathname === "/admin/faq") return null;
 	if (pathname === "/admin/email") return null;
 	if (pathname === "/admin/workshop-images") return null;

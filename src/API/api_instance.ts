@@ -20,7 +20,7 @@ instance.interceptors.request.use((config) => {
     }
     const accessToken = getAccessToken();
     if(accessToken) {
-        (config.headers as any).Authorization = `Bearer ${accessToken}`;
+        (config.headers as any).Authorization = (config.headers as any).Authorization || `Bearer ${accessToken}`;
     }
     return config;
 })
