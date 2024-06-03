@@ -1,40 +1,41 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useParams } from "react-router";
-import i18next from 'i18next'
-import {useTranslation} from 'react-i18next'
-import LanguageOpt from '../../components/languageSelector'
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
+import LanguageOpt from "../../components/languageSelector";
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import { NavLink, useLocation } from "react-router-dom";
 import "../Header/Header.css";
-import {CookLogo,Profpic} from '../../Assets';
-
-
-
-
-
+import { CookLogo, Profpic } from "../../Assets";
 
 let Logo =
 	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1704776168/Cooking%20Academy%20Assets/rero4j0wglocfe3v1gpd.svg";
-let Logo2 = 'https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg';
+let Logo2 =
+	"https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg";
 let Menu =
 	"https://res.cloudinary.com/dxcgqtuhj/image/upload/v1707718625/Cooking%20Academy%20Assets/i81dnadbn0vrakrdwje8.png";
 
-	function Navbar() {
+function Navbar() {
+	// ============Translator============//
+	const { t } = useTranslation();
 
-	  // ============Translator============//
-	  const {t} = useTranslation();
-
-	  const handleClick=(e)=>{
-		i18next.changeLanguage(e.target.value)
-	  }
-		// ==========Translator==============//
-
+	const handleClick = (e) => {
+		i18next.changeLanguage(e.target.value);
+	};
+	// ==========Translator==============//
 
 	let { id, courseId } = useParams();
 
 	const location = useLocation();
+	const cart = useAppSelector((state) => state.cart.data);
+
+	const itemsInCart = useMemo(
+		() => cart?.itemId?.length || 0,
+		[cart?.itemId?.length]
+	);
+
 	const [open, setOpen] = useState(false);
-  const loggedIn = useAppSelector(state => !!state.auth.accessToken);
+	const loggedIn = useAppSelector((state) => !!state.auth.accessToken);
 
 	// custom hide
 	const { pathname } = useLocation();
@@ -56,14 +57,14 @@ let Menu =
 	const navWithOpacity = location.pathname !== "/" ? "withOpacity" : "";
 	const navWithOpacity2 = location.pathname !== "/profile" ? "withOpacity" : "";
 	const navWithOpacity3 = location.pathname !== "/cart" ? "withOpacity" : "";
-	const navWithOpacity4 = location.pathname !== "/menu-consultancy" ? "withOpacity" : "";
-	const navWithOpacity5 = location.pathname !== "/termsAndConditions" ?  "withOpacity" : "";
-	const navWithOpacity6 = location.pathname !== "/CancellationPolicy" ?  "withOpacity" : "";
+	const navWithOpacity4 =
+		location.pathname !== "/menu-consultancy" ? "withOpacity" : "";
+	const navWithOpacity5 =
+		location.pathname !== "/termsAndConditions" ? "withOpacity" : "";
+	const navWithOpacity6 =
+		location.pathname !== "/CancellationPolicy" ? "withOpacity" : "";
 
 	return (
-
-		
-
 		<>
 			<nav
 				className={`bg-black border-b-2 border-[#383838] relative ${
@@ -78,7 +79,11 @@ let Menu =
 				<div className="w-11/12 mx-auto lg:flex justify-between pt-8 pb-3">
 					<div className="flex justify-between">
 						<a href="/">
-							<img src={CookLogo} className="h-12 md:h-20"></img>
+							<img
+								alt="cooking academy"
+								src={CookLogo}
+								className="h-12 md:h-20"
+							/>
 						</a>
 						{/* menu */}
 						<i
@@ -108,17 +113,20 @@ let Menu =
 							<li>
 								<NavLink to="/kitchen-studio">Kitchen Studio</NavLink>
 							</li>
-							
-							<li>
-								<NavLink to='/cart'><i class="text-xl fa-solid fa-cart-shopping"></i></NavLink>
+
+							<li className="relative">
+								<NavLink to="/cart" className="relative">
+									<i class="text-xl fa-solid fa-cart-shopping"></i>
+									{!!itemsInCart && <span className="absolute top-[-20px] right-[-10px] rounded-full w-4 h-4 bg-red-500 font-bold text-xs text-center">{itemsInCart}</span>}
+								</NavLink>
 							</li>
 							<li className="">
-								<NavLink to={loggedIn ? "/profile" : '/login'}>
-									<img src={Profpic} className="h-14 rounded-full"></img>
+								<NavLink to={loggedIn ? "/profile" : "/login"}>
+									<img alt="profile" src={Profpic} className="h-14 rounded-full" />
 								</NavLink>
 							</li>
 							<li>
-								<LanguageOpt onChange={(e)=> handleClick(e)}/>
+								<LanguageOpt onChange={(e) => handleClick(e)} />
 							</li>
 						</ul>
 					</div>
@@ -127,7 +135,6 @@ let Menu =
 
 				{/*  */}
 			</nav>
-			
 		</>
 	);
 }
