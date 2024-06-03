@@ -40,9 +40,9 @@ const CartItem: FC<CartItemProps> = ({ item }) => {
 	}, [dispatch, item._id, setDeleting]);
 
 	return (
-		<div className="grid gap-3 lg:gap-0 grid-cols-1 md:grid-cols-1 lg:grid-cols-4 text-black">
+		<div className="grid gap-3 lg:gap-2 grid-cols-1 md:grid-cols-1 lg:grid-cols-4 text-black">
 			<img
-				className="lg:h-28 lg:w-44 object-cover rounded-md"
+				className="lg:w-[100px] object-contain rounded-md"
 				src={item?.image}
 				alt={item.name}
 			/>
