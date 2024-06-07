@@ -96,7 +96,7 @@ const Login = () => {
           </div>
         </div>
         <p className="text-zinc-500 flex justify-end text-sm">
-          Forget Password ?
+          Forgot Password ?
         </p>
         <button
           type="submit"

@@ -52,9 +52,14 @@ export const loginAction = createAsyncThunk(
 	}
 );
 
+interface SignUpCallBacks {
+	onSuccess?: () => void;
+	onError?: (error: AxiosError<any>) => void;
+}
+
 export const signupAction = createAsyncThunk(
 	"signup/action",
-	async (credentials: SignupCredentials, ThunkApi) => {
+	async (credentials: SignupCredentials & SignUpCallBacks, ThunkApi) => {
 		try {
 			await signupWithCredentials(credentials);
 			const res = await loginWithCredentials(credentials);
@@ -66,11 +71,13 @@ export const signupAction = createAsyncThunk(
 			setAccessToken(accessToken);
 			setRefreshToken(refreshToken);
 			ThunkApi.dispatch(fetchUser());
+			credentials?.onSuccess?.();
 			return {
 				accessToken,
 				refreshToken,
 			};
 		} catch (error) {
+			credentials?.onError?.(error as AxiosError);
 			throw error;
 		}
 	}
