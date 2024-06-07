@@ -106,11 +106,7 @@ function Login() {
 									)}
 								</div>
 							</div>
-							<p className="text-right text-sm hover:underline cursor-pointer"><Link to={'/forget-password'}>Forget Password</Link></p>
-							<p className="text-text-dark xs:text-xs md:text-[10px] xl:text-xs text-center md:w-[80%] mx-auto py-2">
-								By creating an account you agree to our Terms of Service and
-								Privacy Policy
-							</p>
+							<p className="text-right text-sm hover:underline cursor-pointer"><Link to={'/forget-password'}>Forgot Password ?</Link></p>
 							<button
 								type="submit"
 								disabled={loggingIn}
