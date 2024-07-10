@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useFormik } from "formik";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import * as Yup from "yup";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import { loginAction } from "../../redux/thunks/authThunk";
@@ -29,7 +29,6 @@ const Login = () => {
   const auth = useAppSelector(state => state.auth);
   const [loggingIn, setLogingIn] = useState(false);
   const navigate = useNavigate();
-
 
   useEffect(() => {
     if (auth.data) {

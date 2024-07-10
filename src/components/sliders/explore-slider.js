@@ -8,6 +8,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import instance from "../../API/api_instance";
 import useAddCourseToCart from "../../hooks/useAddCourseToCart";
 import useAppSelector from "../../redux/hooks/useAppSelector";
+import { onAddToCartDataLayer, onProductClickDataLayer } from "../../helpers/dataLayer";
 
 function SampleNextArrow({ onClick }) {
 	return (
@@ -96,7 +97,14 @@ function Exploreslider() {
 								);
 								const addingItem = adding === item._id;
 								return (
-									<div className="relative ui-card 2xl:px-20" key={index}>
+									<div onClick={() => {
+										onProductClickDataLayer({
+											id: item._id,
+											name: item.name,
+											price: item.price.toFixed(2),
+											// url: 
+										});
+									}} className="relative ui-card 2xl:px-20" key={index}>
 										<LazyLoadImage
 											className="rounded-2xl card-img xs:h-[500px] w-fit mx-auto md:h-full md:w-[411px]"
 											src={item.image}
@@ -115,6 +123,13 @@ function Exploreslider() {
 														e.preventDefault();
 														if (!alreadyPurchased) {
 															onEnroll(item);
+															onAddToCartDataLayer([
+																{
+																	id: item._id,
+																	name: item.name,
+																	price: item.price.toFixed(2),
+																}
+															]);
 														} else {
 															navigate("/cooking-class-1?courseId=" + item._id);
 														}

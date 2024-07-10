@@ -3,6 +3,7 @@ import useToggle from "../../hooks/useToggle";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import { Course } from "../../redux/slices/courseSlice";
 import { deleteFromCart } from "../../redux/thunks/cartThunk";
+import Spinner from "../../components/Spinner";
 export interface CourseData {
 	image: string;
 	instructorName: string;
@@ -27,7 +28,6 @@ interface CartItemProps {
 }
 
 const CartItem: FC<CartItemProps> = ({ item }) => {
-
 	const dispatch = useAppDispatch();
 
 	const [deleting, setDeleting] = useToggle(false);
@@ -42,7 +42,7 @@ const CartItem: FC<CartItemProps> = ({ item }) => {
 	return (
 		<div className="grid gap-3 lg:gap-2 grid-cols-1 md:grid-cols-1 lg:grid-cols-4 text-black">
 			<img
-				className="lg:w-[100px] object-contain rounded-md"
+				className="object-contain rounded-md"
 				src={item?.image}
 				alt={item.name}
 			/>
@@ -63,13 +63,19 @@ const CartItem: FC<CartItemProps> = ({ item }) => {
 				<p> total hours | {item.lesson} lessons</p>
 			</div>
 			<div className="flex justify-between">
-				<div className="flex gap-1 flex-col justify-center align-middle text-blue-800 font-medium">
+				<div className="flex gap-1 flex-col justify-center align-middle text-sm text-blue-800 font-medium">
 					<button
 						disabled={deleting}
 						onClick={handleDeleteFromCart}
 						className="cursor-pointer text-blue-800"
 					>
-						{deleting ? "Removing..." : "Remove"}
+						{deleting ? (
+							<div className="flex flex-col gap-1">
+								<Spinner className="!w-5 !h-5" />
+							</div>
+						) : (
+							"Remove"
+						)}
 					</button>
 					<p className="cursor-pointer">Save for Later</p>
 				</div>
