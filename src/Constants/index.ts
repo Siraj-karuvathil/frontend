@@ -7,6 +7,6 @@ const urls = {
     server,
 };
 
-const current = urls.local;
+const current = urls.server;
 
 export const BASE_URL = `${current}/api/1.0/`;
