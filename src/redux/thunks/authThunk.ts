@@ -62,20 +62,20 @@ export const signupAction = createAsyncThunk(
 	async (credentials: SignupCredentials & SignUpCallBacks, ThunkApi) => {
 		try {
 			await signupWithCredentials(credentials);
-			const res = await loginWithCredentials(credentials);
-			const accessToken = res.headers["auth-access-token"];
-			const refreshToken = res.headers["auth-refresh-token"];
-			if (!accessToken || !refreshToken) {
-				throw new Error("No access token obtained");
-			}
-			setAccessToken(accessToken);
-			setRefreshToken(refreshToken);
-			ThunkApi.dispatch(fetchUser());
+			// const res = await loginWithCredentials(credentials);
+			// const accessToken = res.headers["auth-access-token"];
+			// const refreshToken = res.headers["auth-refresh-token"];
+			// if (!accessToken || !refreshToken) {
+			// 	throw new Error("No access token obtained");
+			// }
+			// setAccessToken(accessToken);
+			// setRefreshToken(refreshToken);
+			// ThunkApi.dispatch(fetchUser());
 			credentials?.onSuccess?.();
-			return {
-				accessToken,
-				refreshToken,
-			};
+			// return {
+			// 	accessToken: null,
+			// 	refreshToken: null,
+			// };
 		} catch (error) {
 			credentials?.onError?.(error as AxiosError);
 			throw error;

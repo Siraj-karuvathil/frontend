@@ -5,7 +5,7 @@ import useToggle from "../../hooks/useToggle";
 import { signupAction } from "../../redux/thunks/authThunk";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import useAppSelector from "../../redux/hooks/useAppSelector";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { Logp1, Logp2, Logp3, Logp4, CookLogo } from "../../Assets";
 import { toast } from "react-toastify";
@@ -95,6 +95,8 @@ function SignUp() {
     const navigate = useNavigate();
     const dispatch = useAppDispatch();
     const [signingUp, toggleSigningUp] = useToggle(false);
+    const [searchParams] = useSearchParams();
+    const referrer = searchParams.get('referrer');
     const signUpForm = useFormik({
         initialValues: {
             username: "",
@@ -120,7 +122,9 @@ function SignUp() {
                         toast.error(message);
                     },
                     onSuccess() {
-                        toast.success("Signed Up Successfully");
+                        const _referrer = referrer && referrer !== 'null' ? referrer : null;
+                        toast.success("Signed Up Successfully, You need to verify your email to login. Check your email for verification link.");
+                        navigate('/login' + (_referrer ? `?referrer=${_referrer}` : ""));
                     },
                 })
             )
@@ -130,14 +134,14 @@ function SignUp() {
         },
     });
 
-    const auth = useAppSelector((state) => state.auth);
-    useEffect(() => {
-        if (auth.data) {
-            navigate("/", {
-                replace: true,
-            });
-        }
-    }, [auth.data, navigate]);
+    // const auth = useAppSelector((state) => state.auth);
+    // useEffect(() => {
+    //     if (auth.data) {
+    //         navigate(referrer ? referrer : "/", {
+    //             replace: true,
+    //         });
+    //     }
+    // }, [auth.data, navigate, referrer]);
 
     const inputs: InputFieldItem[] = useMemo(
         () => [

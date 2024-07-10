@@ -11,12 +11,11 @@ const useAddCourseToCart = () => {
     const auth = useAppSelector(state => state.auth.data);
     const handleAddCourseToCart = useCallback((itemId: string) => {
         if(!auth) {
-            navigate('/login');
+            navigate('/login?referrer=/cart?item_id=' + itemId);
         }
         setAdding(itemId);
         dispatch(addToCart(itemId))
         .then((res: any) => {
-            console.log(res);
             if(res.error) {
                 throw new Error(res.error.message);
             }

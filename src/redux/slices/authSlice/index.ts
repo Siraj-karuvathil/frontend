@@ -75,10 +75,10 @@ export const authSlice = createSlice({
 				state.status = "loading";
 				state.error = null;
 			})
-			.addCase(signupAction.fulfilled, function (state, action) {
+			.addCase(signupAction.fulfilled, function (state) {
 				state.status = "idle";
-				state.accessToken = action.payload.accessToken;
-				state.refreshToken = action.payload.refreshToken;
+				// state.accessToken = action.payload.accessToken;
+				// state.refreshToken = action.payload.refreshToken;
 			})
 			.addCase(signupAction.rejected, function (state, action) {
 				state.error = action.error;
