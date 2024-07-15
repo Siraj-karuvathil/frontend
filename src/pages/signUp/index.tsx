@@ -122,6 +122,15 @@ function SignUp() {
                         toast.error(message);
                     },
                     onSuccess() {
+                        if(window.dataLayer) {
+                            window.dataLayer.push({
+                                'event': 'userDataSubmitted',
+                                userData: {
+                                    name: values.username,
+                                    email: values.email,
+                                },
+                            });
+                        }
                         const _referrer = referrer && referrer !== 'null' ? referrer : null;
                         toast.success("Signed Up Successfully, You need to verify your email to login. Check your email for verification link.");
                         navigate('/login' + (_referrer ? `?referrer=${_referrer}` : ""));
