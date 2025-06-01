@@ -4,12 +4,17 @@ import {useTranslation} from 'react-i18next'
 import { NavLink, useLocation } from 'react-router-dom';
 import './styles.css';
 import {Chef1,Chef2,Chef3,Chef4,Chef5,Chef6,Chef7,Chef8,Chef9} from '../../Assets'
-
+let shouldShow = false;
 
 export default function Index() {
   // ========================//
 	  const {t} = useTranslation();
 	// ========================//
+
+  if(!shouldShow) {
+    return null;
+  }
+  
     return (
         <>
             <section className='w-11/12 mx-auto grid place-items-center my-20 overflow-hidden'>

@@ -1,12 +1,13 @@
 import './App.css';
-import {ToastContainer} from 'react-toastify'
-import {ScrollToTop} from 'react-router-scroll-to-top';
+import { ToastContainer } from 'react-toastify'
+import { ScrollToTop } from 'react-router-scroll-to-top';
 import {
   createBrowserRouter,
   RouterProvider,
   Outlet
 } from "react-router-dom";
-import {withReduxProvider} from './redux/store'
+import { client } from './API/react-query/client';
+import { withReduxProvider } from './redux/store'
 import Login from './pages/login/index';
 import ForgetPage from './pages/forgetPage/index';
 import OTP from './pages/otp/index';
@@ -38,17 +39,19 @@ import CourseEdit from './Admin/Pages/Course Details Edit';
 
 import useInitializeApp from './hooks/useInitializeApp';
 import PaymentSuccess from './pages/PaymentSuccess';
+import { QueryClientProvider } from '@tanstack/react-query';
+import ResetPassword from './pages/forgetPage/reset-password';
 
 
 
 const Layout = () => {
-  return(
+  return (
     <div className='app'>
-     <ScrollToTop/>
-      <Header/>
-      <Outlet/>
-      <ToastContainer/>
-      <Footer/>
+      <ScrollToTop />
+      <Header />
+      <Outlet />
+      <ToastContainer />
+      <Footer />
     </div>
   )
 }
@@ -58,116 +61,120 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children:[
+    children: [
       {
-        path:"/",
-        element:<Home/>
+        path: "/",
+        element: <Home />
       },
       {
-        path:"/payment-success",
-        element:<PaymentSuccess />
+        path: "/payment-success",
+        element: <PaymentSuccess />
       },
       {
-        path:"/login",
-        element:<Login/>
+        path: "/login",
+        element: <Login />
       },
       {
-        path:"/signup",
-        element:<SignUp/>
+        path: "/signup",
+        element: <SignUp />
       },
       {
-        path:"/about-us",
-        element:<AboutUs/>
+        path: "/about-us",
+        element: <AboutUs />
       },
       {
-        path:"/cooking-class",
-        element:<Cookingclass/>
+        path: "/cooking-class",
+        element: <Cookingclass />
       },
       {
-        path:"/cooking-class/:name",
-        element:<CookingclassInside/>
+        path: "/cooking-class/:name",
+        element: <CookingclassInside />
       },
       {
-        path:"/cooking-class-1",
-        element:<Cookingclassone/>
+        path: "/cooking-class-1",
+        element: <Cookingclassone />
       },
       {
-        path:"/kitchen-studio",
-        element:<KitchenStudio/>
+        path: "/kitchen-studio",
+        element: <KitchenStudio />
       },
       {
-        path:"/menu-consultancy",
-        element:<Menuconsultancy/>
+        path: "/menu-consultancy",
+        element: <Menuconsultancy />
       },
       {
-        path:"/profile",
-        element:<Profile/>
+        path: "/profile",
+        element: <Profile />
       },
       {
-        path:"/cart",
-        element:<Cart/>
+        path: "/cart",
+        element: <Cart />
       },
       {
-        path:"/success",
-        element:<Success/>
+        path: "/success",
+        element: <Success />
       },
       {
-        path:"*",
-        element:<div className='h-[80vh] grid place-items-center'><h1>Page Not Found</h1></div>
+        path: "*",
+        element: <div className='h-[80vh] grid place-items-center'><h1>Page Not Found</h1></div>
       },
       {
-        path:"/admin/login",
-        element:<AdminLogin/>
+        path: "/admin/login",
+        element: <AdminLogin />
       },
       {
-        path:"/verify-otp",
-        element:<OTP/>
+        path: "/verify-otp",
+        element: <OTP />
       },
       {
-        path:"/forget-password",
-        element:<ForgetPage/>
+        path: "/forget-password",
+        element: <ForgetPage />
       },
       {
-        path:"/admin/faq",
-        element:<FAQ/>
+        path: "/reset-password",
+        element: <ResetPassword />
       },
       {
-        path:"/admin/email",
-        element:<Email/>
+        path: "/admin/faq",
+        element: <FAQ />
       },
       {
-        path:"/admin/class-details",
-        element:<ClassDetail/>
+        path: "/admin/email",
+        element: <Email />
       },
       {
-        path:"/admin/course-details",
-        element:<CourseDetail/>
+        path: "/admin/class-details",
+        element: <ClassDetail />
       },
       {
-        path:"/admin/course-edit/:id",
-        element:<CourseEdit/>
+        path: "/admin/course-details",
+        element: <CourseDetail />
       },
       {
-        path:"/admin/class-edit/:id/:courseId",
-        element:<ClassInnerEdit/>
+        path: "/admin/course-edit/:id",
+        element: <CourseEdit />
       },
       {
-        path:"/admin/class/:id",
-        element:<ClassDetailInner/>
+        path: "/admin/class-edit/:id/:courseId",
+        element: <ClassInnerEdit />
       },
       {
-        path:"/termsAndConditions",
-        element:<TermsAndConditions/>
+        path: "/admin/class/:id",
+        element: <ClassDetailInner />
       },
       {
-        path:"/CancellationPolicy",
-        element:<CancellationPolicy/>
+        path: "/termsAndConditions",
+        element: <TermsAndConditions />
+      },
+      {
+        path: "/CancellationPolicy",
+        element: <CancellationPolicy />
       }
     ]
   },
   {
-    path:"/checkout-page",
-    element:<CheckoutPage />
+    path: "/checkout-page",
+    element: <CheckoutPage />
   },
 ]);
 
@@ -178,9 +185,11 @@ const router = createBrowserRouter([
 function App() {
   useInitializeApp();
   return (
-    <div className="App">
-      <RouterProvider router={router} />
-    </div>
+    <QueryClientProvider client={client}>
+      <div className="App">
+        <RouterProvider router={router} />
+      </div>
+    </QueryClientProvider>
   );
 }
 

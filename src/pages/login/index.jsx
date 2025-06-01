@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useFormik } from "formik";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import * as Yup from "yup";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import { loginAction } from "../../redux/thunks/authThunk";
@@ -25,15 +25,17 @@ function Login() {
 	const [loggingIn, setLogingIn] = useState(false);
 	const navigate = useNavigate();
 
+	const [searchParams] = useSearchParams();
 
+	const referrer = searchParams.get('referrer');
 
 	useEffect(() => {
 		if (auth.data) {
-			navigate('/', {
+			navigate(referrer ? referrer : '/', {
 				replace: true,
 			})
 		}
-	}, [auth.data, navigate]);
+	}, [auth.data, navigate, referrer]);
 
 
 	const loginForm = useFormik({
@@ -76,7 +78,7 @@ function Login() {
 						</NavLink>
 						<p className="text-primary-clr2 py-5">
 							New user?
-							<a className="pl-5 text-text-dark" href="/signup">
+							<a className="pl-5 text-text-dark" href={`/signup${referrer ? `?referrer=${referrer || "/"}` : ""}`}>
 								Create an account
 							</a>
 						</p>
@@ -106,11 +108,7 @@ function Login() {
 									)}
 								</div>
 							</div>
-							<p className="text-right text-sm hover:underline cursor-pointer"><Link to={'/forget-password'}>Forget Password</Link></p>
-							<p className="text-text-dark xs:text-xs md:text-[10px] xl:text-xs text-center md:w-[80%] mx-auto py-2">
-								By creating an account you agree to our Terms of Service and
-								Privacy Policy
-							</p>
+							<p className="text-right text-sm hover:underline cursor-pointer"><Link to={'/forget-password'}>Forgot Password ?</Link></p>
 							<button
 								type="submit"
 								disabled={loggingIn}

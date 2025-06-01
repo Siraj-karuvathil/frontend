@@ -3,22 +3,26 @@ import fetchUserData from "../../API/services/fetchUserData";
 import loginWithCredentials, {
 	LoginCredentials,
 } from "../../API/services/login";
-import signupWithCredentials, { SignupCredentials } from "../../API/services/signup";
+import signupWithCredentials, {
+	SignupCredentials,
+} from "../../API/services/signup";
 import { setAccessToken, setRefreshToken } from "../../helpers/localStorage";
 import { syncTokens } from "../slices/authSlice";
 import { clearMyCourse, fetchMyCourse } from "../slices/courseSlice";
 import { fetchCart } from "./cartThunk";
+import { toast } from "react-toastify";
+import { AxiosError } from "axios";
 
 export const fetchUser = createAsyncThunk("fetch/user", async (_, ThunkApi) => {
-    ThunkApi.dispatch(syncTokens());
-    try {
-        const res = await fetchUserData();
-        ThunkApi.dispatch(fetchCart());
-        ThunkApi.dispatch(fetchMyCourse());
-        return res.data;
-    } catch (error) {
-        throw error;
-    }
+	ThunkApi.dispatch(syncTokens());
+	try {
+		const res = await fetchUserData();
+		ThunkApi.dispatch(fetchCart());
+		ThunkApi.dispatch(fetchMyCourse());
+		return res.data;
+	} catch (error) {
+		throw error;
+	}
 });
 
 export const loginAction = createAsyncThunk(
@@ -26,43 +30,54 @@ export const loginAction = createAsyncThunk(
 	async (credentials: LoginCredentials, ThunkApi) => {
 		try {
 			const res = await loginWithCredentials(credentials);
-            const accessToken = res.headers['auth-access-token'];
-            const refreshToken = res.headers['auth-refresh-token'];
-            if(!accessToken || !refreshToken) {
-                throw new Error("No access token obtained");
-            }
-            setAccessToken(accessToken);
-            setRefreshToken(refreshToken);
-            ThunkApi.dispatch(fetchUser());
+			const accessToken = res.headers["auth-access-token"];
+			const refreshToken = res.headers["auth-refresh-token"];
+			if (!accessToken || !refreshToken) {
+				throw new Error("No access token obtained");
+			}
+			setAccessToken(accessToken);
+			setRefreshToken(refreshToken);
+			ThunkApi.dispatch(fetchUser());
 			return {
-                accessToken,
-                refreshToken,
-            }
+				accessToken,
+				refreshToken,
+			};
 		} catch (error) {
+			const err = error as AxiosError<any>;
+			toast.error(
+				err?.response?.data?.message || err?.message || "Something went wrong"
+			);
 			throw error;
 		}
 	}
 );
 
+interface SignUpCallBacks {
+	onSuccess?: () => void;
+	onError?: (error: AxiosError<any>) => void;
+}
+
 export const signupAction = createAsyncThunk(
 	"signup/action",
-	async (credentials: SignupCredentials, ThunkApi) => {
+	async (credentials: SignupCredentials & SignUpCallBacks, ThunkApi) => {
 		try {
 			await signupWithCredentials(credentials);
-			const res = await loginWithCredentials(credentials);
-            const accessToken = res.headers['auth-access-token'];
-            const refreshToken = res.headers['auth-refresh-token'];
-            if(!accessToken || !refreshToken) {
-                throw new Error("No access token obtained");
-            }
-            setAccessToken(accessToken);
-            setRefreshToken(refreshToken);
-            ThunkApi.dispatch(fetchUser());
-			return {
-                accessToken,
-                refreshToken,
-            }
+			// const res = await loginWithCredentials(credentials);
+			// const accessToken = res.headers["auth-access-token"];
+			// const refreshToken = res.headers["auth-refresh-token"];
+			// if (!accessToken || !refreshToken) {
+			// 	throw new Error("No access token obtained");
+			// }
+			// setAccessToken(accessToken);
+			// setRefreshToken(refreshToken);
+			// ThunkApi.dispatch(fetchUser());
+			credentials?.onSuccess?.();
+			// return {
+			// 	accessToken: null,
+			// 	refreshToken: null,
+			// };
 		} catch (error) {
+			credentials?.onError?.(error as AxiosError);
 			throw error;
 		}
 	}
@@ -71,5 +86,6 @@ export const signupAction = createAsyncThunk(
 export const logoutAction = createAsyncThunk(
 	"logout/action",
 	async (_, ThunkApi) => {
-        ThunkApi.dispatch(clearMyCourse());
-});
+		ThunkApi.dispatch(clearMyCourse());
+	}
+);
